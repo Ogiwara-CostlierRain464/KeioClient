@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Curry (4.0.0)
+  - Runes (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Curry
+  - Runes
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Curry
+    - Runes
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Curry: 887c0b9de9a9947820a59557459c7895e76d7b90
+  Runes: 72a67a5bbbe1b5fdae08b5a01b10c60d83fc69aa
+
+PODFILE CHECKSUM: b16827f8cce851295efede99aa8a02c3da453b93
+
+COCOAPODS: 1.5.0

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F6q-jl-p5i">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="80L-Rq-HPG">
+            <objects>
+                <viewController id="AdA-Id-ZKt" customClass="LoginViewController" customModule="KeioClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zt8-Ho-ywF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-UD-yav">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="npB-af-Tac" firstAttribute="trailing" secondItem="cgD-UD-yav" secondAttribute="trailing" id="4BF-GJ-vU0"/>
+                            <constraint firstItem="npB-af-Tac" firstAttribute="bottom" secondItem="cgD-UD-yav" secondAttribute="bottom" id="L0a-Gw-w2f"/>
+                            <constraint firstItem="cgD-UD-yav" firstAttribute="top" secondItem="npB-af-Tac" secondAttribute="top" id="YL6-hy-HbA"/>
+                            <constraint firstItem="cgD-UD-yav" firstAttribute="leading" secondItem="npB-af-Tac" secondAttribute="leading" id="rgG-lh-xSD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="npB-af-Tac"/>
+                    </view>
+                    <connections>
+                        <outlet property="web" destination="cgD-UD-yav" id="zM3-Vg-oVw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4x-jH-SGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3078" y="1080"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bIi-lO-bhi">
+            <objects>
+                <viewController id="9qY-Is-HNg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zwu-EG-iKV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1Tf-ZK-ddF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="PJ7-sF-RGp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUa-gq-kxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3998" y="436"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="deR-vR-7QS">
+            <objects>
+                <viewController id="HJN-Bv-76d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nmd-w1-YMp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dUA-HK-8l8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="WYl-m6-h2g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daj-IM-LL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3998" y="-227"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="1W7-HP-wAw">
+            <objects>
+                <tabBarController id="F6q-jl-p5i" customClass="HomeViewController" customModule="KeioClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vgb-Bo-967">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HJN-Bv-76d" kind="relationship" relationship="viewControllers" id="2s4-6n-lnx"/>
+                        <segue destination="9qY-Is-HNg" kind="relationship" relationship="viewControllers" id="tVc-of-7dw"/>
+                        <segue destination="AdA-Id-ZKt" kind="presentation" identifier="segueLogin" id="9yf-8d-YEp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vtq-4I-Gpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3078" y="92"/>
+        </scene>
+    </scenes>
+</document>
