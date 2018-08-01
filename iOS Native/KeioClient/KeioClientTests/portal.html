@@ -1,0 +1,1135 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset='UTF-8'>
+            <!-- meta name="viewport" content="width=device-width"> -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+                <!-- Title Tags -->
+                <title>keio.jp</title>
+                <!-- Css -->
+                <link rel='stylesheet' href='css/smoothness/jquery-ui-1.10.2.custom.min.css'>
+                    <link rel='stylesheet' href="css/style.css?ver=012">
+                        <link rel='stylesheet' href="css/info.css?ver=012">
+                            <link rel='stylesheet' href="css/responsive.css?ver=012">
+                                <link rel='stylesheet' href='js/tablesorter/addons/pager/jquery.tablesorter.pager.css'>
+                                    <!--[if lt IE 8]>
+                                     <link rel='stylesheet' href='css/ie7.css'>
+                                     <![endif]-->
+                                    <!--[if lt IE 7]>
+                                     <link rel='stylesheet' href='css/ie5.css'>
+                                     <![endif]-->
+                                    <!-- JS -->
+                                    <script src="js/jquery-1.9.1.js"></script>
+                                    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+                                    <script src="js/common.js?ver=012"></script>
+                                    <script src="js/tablesorter/js/jquery.tablesorter.min.js"></script>
+                                    <script src="js/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
+                                    <script src="js/tablesorter/js/extras/jquery.metadata.min.js"></script>
+                                    <script src="js/tablesorter/addons/pager/jquery.tablesorter.pager.min.js"></script>
+                                    <script src="js/func-lib.js?ver=012"></script>
+                                    <script src="js/kojp_storage.js?ver=012"></script>
+                                    
+                                    <!--[if IE]>
+                                     <script src="js/html5.js"></script>
+                                     <![endif]-->
+                                    <!--[if lt IE 9]>
+                                     <script src="js/ie8.js"></script>
+                                     <![endif]-->
+                                    <script>
+                                        $(function() {
+                                          AppFavoriteMgr.viewFavorite('61804244',3);
+                                          AppFavoriteMgr.addEvent('61804244');
+                                          
+                                          $(".nm_nodisp").click(function () {
+                                                                ConfMailaddr.openConfDlg('キャンセル','同意');
+                                                                });
+                                          });
+                                          
+                                          //同意ダイアログ
+                                          var trgt = "";
+                                          $(function(){
+                                            $('#agree_searchid_dialog').dialog({
+                                                                               autoOpen: false,
+                                                                               title: 'Caution',
+                                                                               width: '250',
+                                                                               closeOnEscape: false,
+                                                                               position:["center", 200],
+                                                                               modal: true,
+                                                                               buttons: {
+                                                                               同意する:function() {
+                                                                               $('<form/>', {action: 'searchId', method: 'post'})
+                                                                               .append($('<input/>', {type: 'hidden', name: 'ACT_311', value: ''}))
+                                                                               .appendTo(document.body)
+                                                                               .submit();
+                                                                               return true;
+                                                                               },
+                                                                               同意しない: function() {
+                                                                               $(this).dialog("close");
+                                                                               }
+                                                                               }
+                                                                               });
+                                            
+                                            // 慶應ID検索ボタン押下
+                                            $(document).on("click","#searchId",function () {
+                                                           $('#agree_searchid_dialog').dialog('open');
+                                                           });
+                                            });
+                                            
+                                        </script>
+                                    
+    </head>
+    <body id="p_top">
+        <!-- HIDE CONTENTS  -->
+        <a class="hide_cont" target="_blank" href="https://mail.google.com/a/keio.jp/">メール</a>
+        <a class="hide_cont" target="_blank" href="https://drive.google.com/a/keio.jp/">ドライブ</a>
+        <a class="hide_cont" href="#mv_appl" id="appl_on">アプリケーションへ移動</a>
+        
+        <a class="hide_cont" href="#mv_info" id="info_on">インフォメーションへ移動</a>
+        <!-- FIXED top layout -->
+        <div id="tophead" class='gradient'>
+            <div class="center">
+                <ul class='login_info'>
+                    
+                    <li>荻原 湧志 君、keio.jpへようこそ。</li>
+                    
+                    <!-- 2017/03/08 取得に時間がかかるため、トップ画面には表示しない。 -->
+                    
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /FIXED-->
+        <!-- top menu -->
+        <nav>
+            <div class="center">
+                <!-- PCメニュー-->
+                <ul class="guide">
+                    <!-- ■【メニュー】日本語 -->
+                    <li id="jp-menu" class="lang menu_event"><a tabindex="0" id="jp-ACT_013" title='日本語表示に変更します。'><span class="ui-icon ui-icon-transfer-e-w"></span>日本語</a></li>
+                    <!-- ■【メニュー】English -->
+                    <li id="eng-menu" class="lang menu_event"><a tabindex="0" id="eng-ACT_014" title='Change language.'><span class="ui-icon ui-icon-transfer-e-w"></span>English</a></li>
+                    <!-- ■【メニュー】利用ガイド -->
+                    <li class="s_menu" id="s_menu_guide"><a title='本システムの利用者ガイドを掲載したWEBサイトに遷移します。' href="http://www.itc.keio.ac.jp/ja/keiojp_manual.html"  target="_blank"><span class="ui-icon ui-icon-help"></span>利用ガイド</a></li>
+                    
+                    <!-- ■【メニュー】Keio Apps ID変更 -->
+                    <!--
+                     <li>
+                     <form id='form_8' action="changeIdDisp" method="post">
+                     <span class="ui-icon ui-icon-key"></span><input type='submit' class='g_submit' id='guide_8' title='Keio Apps ID変更画面に遷移します。' value='Keio Apps ID変更'>
+                     <input type="hidden" name="ACT_015" value="Keio Apps ID変更">
+                     </form>
+                     </li>
+                     -->
+                    
+                    <!--3/3-->
+                    <!--
+                     <li class="s_menu" style="width:160px;text-align:center" id="s_menu_setup"><a title='各種変更メニュー' href="#" ><span class="ui-icon ui-icon-info"></span>各種変更</a>
+                     <ul class="sub">
+                     -->
+                    <!-- ■【メニュー】各パスワード変更 -->
+                    <li id="passMenu" class="m_menu menu_event"><a tabindex="0" id="ACT_019" title='パスワード変更画面に遷移します。'><span class="ui-icon ui-icon-key"></span>各パスワード変更</a></li>
+                    
+                    
+                    <!-- 【メールアドレス変更】 -->
+                    <!--3/3
+                     <li id="chgMailAddr" class="m_menu menu_event"><a tabindex="0" id="ACT_020" title='通知用メールアドレス変更画面に遷移します。'><span class="ui-icon ui-icon-mail-closed"></span>通知用メールアドレス</a></li>
+                     -->
+                    
+                    <!--3/3
+                     </ul>
+                     </li>
+                     -->
+                    
+                    
+                    
+                    <!-- ■【メニュー】マイアカウント -->
+                    <li id="myaccount-menu" class="m_menu menu_event">
+                        <a tabindex="0" id="ACT_401" title='My Account画面に遷移します。'><span class="ui-icon ui-icon-person"></span>
+                            My Account</a>
+                    </li>
+                    
+                    <!-- ■【メニュー】ログオフ -->
+                    <li class="s_menu" id="s_menu_logout"><a title='システムからログアウトを行います。' href='logoff'><span class="ui-icon ui-icon-squaresmall-close"></span>ログオフ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /top menu -->
+        
+        <!-- 身分表示保留
+         
+         メニュー
+         -->
+        
+        <p class="warn">
+        
+        </p>
+        <!-- wrap -->
+        
+        <div id="wrap" class="clearfix">
+            <header id="top" class="clearfix">
+                <h1 class="logo">keio.jp portal</h1>
+            </header>
+            
+            <!-- top menu -->
+            <div class="sp">
+                <div class="menu-toggle toggle">
+                    
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    
+                    <div class="clear"></div>
+                    
+                </div>
+                <!-- スマートフォンメニュー -->
+                <ul class='ul-toggle' style='clear:both'>
+                    <!-- ■【スマートフォンメニュー】日本語 -->
+                    <li>
+                        <form id='form_1s' action="menu" method="post"><a class='g_submit' id='guide_1s' title='日本語表示に変更します。'>
+                            <span class="ui-icon ui-icon-transfer-e-w"></span>日本語
+                            <input type="hidden" name="ACT_013" value="日本語">
+                                </a></form>
+                    </li>
+                    <!-- ■【スマートフォンメニュー】English -->
+                    <li>
+                        <form id='form_2s' action="menu" method="post"><a class='g_submit' id='guide_2s' title='Change language.'>
+                            <span class="ui-icon ui-icon-transfer-e-w"></span>English
+                            <input type="hidden" name="ACT_014" value="English">
+                                </a></form>
+                    </li>
+                    <!-- ■【スマートフォンメニュー】利用ガイド -->
+                    <li><a title='本システムの利用者ガイドを掲載したWEBサイトに遷移します。' href="http://www.itc.keio.ac.jp/ja/keiojp_manual.html"  target="_blank"><span class="ui-icon ui-icon-help"></span>利用ガイド</a></li>
+                    
+                    <!-- ■【スマートフォンメニュー】Keio Apps ID変更 -->
+                    <!--
+                     <li>
+                     <form id='form_8' action="changeIdDisp" method="post"><a class='g_submit' id='guide_8' title='Keio Apps ID変更画面に遷移します。'>
+                     <span class="ui-icon ui-icon-key"></span>Keio Apps ID変更
+                     <input type="hidden" name="ACT_015" value="Keio Apps ID変更">
+                     </a></form>
+                     </li>
+                     -->
+                    
+                    <!-- ■【スマートフォンメニュー】各パスワード変更 -->
+                    <li>
+                        <form id='form_5s' action="passMenu" method="post"><a class='g_submit' id='guide_5s' title='パスワード変更画面に遷移します。'>
+                            <span class="ui-icon ui-icon-key"></span>各パスワード変更
+                            <input type="hidden" name="ACT_019" value="各パスワード変更">
+                                </a></form>
+                    </li>
+                    
+                    <!-- ■【スマートフォンメニュー】通知用メールアドレス変更 -->
+                    <!--3/3
+                     <li>
+                     <form id='form_9' action="chgMailAddr" method="post"><a class='g_submit' id='guide_9' title='通知用メールアドレス変更画面に遷移します。'>
+                     <span class="ui-icon ui-icon-mail-closed"></span>通知用メールアドレス
+                     <input type="hidden" name="ACT_020" value="通知用メールアドレス">
+                     </a></form>
+                     </li>
+                     -->
+                    
+                    
+                    
+                    <!-- ■【メニュー】マイアカウント -->
+                    <li>
+                        <form id='form_6' action="myaccount" method="post"><a class='g_submit' id='myaccount_6' title='My Account画面に遷移します。'>
+                            <span class="ui-icon ui-icon-person"></span>My Account
+                            <input type="hidden" name="ACT_401" value="My Account">
+                                </a></form>
+                    </li>
+                    <!-- ■【スマートフォンメニュー】ログオフ-->
+                    <li><a title='システムからログアウトを行います。' href='logoff'><span class="ui-icon ui-icon-squaresmall-close"></span>ログオフ</a></li>
+                </ul>
+            </div>
+            <!-- /top menu -->
+            
+            
+            <div class='main'>
+                
+                <!-- 新規ＩＤ利用可能お知らせ  -->
+                <!--
+                 <article class="corner" style='border:1px solid #ccc;margin:0 auto 10px;width:90%;'>
+                 <div class="confirm_exp" style="padding: 0 5px;">
+                 
+                 <h3>2014年11月11日よりkeio.jpの変更点があります。<a target="_blank" href="http://www.itc.keio.ac.jp/ja/keiojp_manual2_20141111_change.html" transaction="true">詳細</a></h3>
+                 <div class="keioapps_info" style="color: #666666;">あなたのKeio Apps ID：</div><div class="keioapps_info">yushiogiwara@keio.jp</div>
+                 <h4 style="margin-top: 0px;">Keio Apps IDについて <a target="_blank" href="http://www.itc.keio.ac.jp/ja/keiojp_keiomail2_gafe_account.html" transaction="true">詳細</a></h4>
+                 
+                 </div>
+                 </article>
+                 -->
+                
+                
+                
+                
+                <!-- left contents -->
+                <aside class="clearfix" id="sidebar">
+                    <div class="side_title"><h2 tabindex="0">Application</h2></div>
+                    <div class="sidebar-box clearfix" >
+                        
+                        <!-- ■よく使われる項目 -->
+                        <h3 tabindex="0">よく使われる項目</h3>
+                        <ul id="a_menu">
+                            
+                            
+                            <li>
+                                <a href="https://gslbs.adst.keio.ac.jp/keiojp/" target="_blank"  data-ko-applid='51'><span class="ui-icon ui-icon-extlink"></span>
+                                    教育支援システム</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.edu.keio.jp/ess2/login?lang=jp" target="_blank"  data-ko-applid='91'><span class="ui-icon ui-icon-extlink"></span>
+                                    授業支援</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://otp-libproxy2.keio.jp/app/kosmos/shib/" target="_blank"  data-ko-applid='20'><span class="ui-icon ui-icon-extlink"></span>
+                                    KOSMOS My Library</a>
+                            </li>
+                            
+                        </ul>
+                        
+                        
+                        
+                        
+                        <!-- ■Google Apps -->
+                        <h3  tabindex="0">G Suite</h3>
+                        <ul id="c_menu">
+                            <!-- 【Google Apps】メール -->
+                            <li><a href="https://mail.google.com/a/keio.jp/" target="_blank"><span class="ui-icon ui-icon-extlink"></span>メール</a></li>
+                            <!-- 【Google Apps】ドライブ -->
+                            <li><a href="https://drive.google.com/a/keio.jp/" target="_blank"><span class="ui-icon ui-icon-extlink"></span>ドライブ</a></li>
+                            <!-- 【Google Apps】カレンダー -->
+                            <li><a href="https://calendar.google.com/a/keio.jp/" target="_blank"><span class="ui-icon ui-icon-extlink"></span>カレンダー</a></li>
+                            <!-- 【Google Apps】グループ -->
+                            <li><a href="https://groups.google.com/a/keio.jp/" target="_blank"><span class="ui-icon ui-icon-extlink"></span>グループ</a></li>
+                            <!-- 【Google Apps】連絡先 -->
+                            <li><a href="https://www.google.com/contacts/a/keio.jp/" target="_blank"><span class="ui-icon ui-icon-extlink"></span>連絡先</a></li>
+                        </ul>
+                        
+                        
+                        
+                        <!-- ■Wi-Fi表示 -->
+                        
+                        <h3  tabindex="0">無線LAN接続設定</h3>
+                        <ul id="e_menu">
+                            <li><a href="http://www.itc.keio.ac.jp/ja/net_connect_wireless_lan.html" target="_blank"><span class="ui-icon ui-icon-extlink"></span>keiomobile2 / eduroam</a></li>
+                        </ul>
+                        
+                        <!-- ■カテゴリ別表示 -->
+                        <h3 tabindex="0">カテゴリ別表示</h3>
+                        <ul id="b_menu">
+                            
+                            <li><a><span>すべて</span></a>
+                                <ul class="cat_menu" style="width:100%;">
+                                    
+                                    <li>
+                                        <a href="https://gslbs.adst.keio.ac.jp/keiojp/" target="_blank"  data-ko-applid='51'><span class="ui-icon ui-icon-extlink"></span>
+                                            教育支援システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://mail.google.com/a/keio.jp/" target="_blank"  data-ko-applid='101'><span class="ui-icon ui-icon-extlink"></span>
+                                            慶應メール</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://taikenki.adst.keio.ac.jp/" target="_blank"  data-ko-applid='120'><span class="ui-icon ui-icon-extlink"></span>
+                                            就職活動体験記システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.edu.keio.jp/ess2/login?lang=jp" target="_blank"  data-ko-applid='91'><span class="ui-icon ui-icon-extlink"></span>
+                                            授業支援</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://jukuin-contact.keio.jp/jca/page/LoginServlet" target="_blank"  data-ko-applid='104'><span class="ui-icon ui-icon-extlink"></span>
+                                            ＯＢ・ＯＧ訪問システム（eメール送信用）</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/rishu/login" target="_blank"  data-ko-applid='63'><span class="ui-icon ui-icon-extlink"></span>
+                                            学事WEBシステム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://sp-uc.career-tasu.jp/login/?id=e8d1870a4bdd6b5c6440e8df71dd1041" target="_blank"  data-ko-applid='65'><span class="ui-icon ui-icon-extlink"></span>
+                                            求人ナビ（キャリタスＵＣ）</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/entry/login" target="_blank"  data-ko-applid='70'><span class="ui-icon ui-icon-extlink"></span>
+                                            Webエントリーシステム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/prs/login" target="_blank"  data-ko-applid='90'><span class="ui-icon ui-icon-extlink"></span>
+                                            履修希望科目事前登録</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/rcs/login" target="_blank"  data-ko-applid='62'><span class="ui-icon ui-icon-extlink"></span>
+                                            学業成績表</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/tpw/PortalAuthenticateServlet" target="_blank"  data-ko-applid='69'><span class="ui-icon ui-icon-extlink"></span>
+                                            教職課程</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://wwwdc04.adst.keio.ac.jp/sdm_login.php" target="_blank"  data-ko-applid='78'><span class="ui-icon ui-icon-extlink"></span>
+                                            SDM e-Learning システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://econds.adst.keio.ac.jp/jspui/index.jsp" target="_blank"  data-ko-applid='94'><span class="ui-icon ui-icon-extlink"></span>
+                                            経済学部卒業論文要旨公開システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://gslbs.adst.keio.ac.jp/keiojp_law/" target="_blank"  data-ko-applid='87'><span class="ui-icon ui-icon-extlink"></span>
+                                            法務研究科（法科大学院）</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://authstrm2.keio.jp/" target="_blank"  data-ko-applid='64'><span class="ui-icon ui-icon-extlink"></span>
+                                            IT活用Web講座 </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://kd.keio.jp" target="_blank"  data-ko-applid='102'><span class="ui-icon ui-icon-extlink"></span>
+                                            ナレッジデリバー</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://fresh.keio.jp/" target="_blank"  data-ko-applid='105'><span class="ui-icon ui-icon-extlink"></span>
+                                            新入生お知らせ</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://slc.keio.jp/slc/login" target="_blank"  data-ko-applid='106'><span class="ui-icon ui-icon-extlink"></span>
+                                            ソフトウェアライセンス取得システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://keio.box.com/" target="_blank"  data-ko-applid='108'><span class="ui-icon ui-icon-extlink"></span>
+                                            Box</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/rid/login" target="_blank"  data-ko-applid='111'><span class="ui-icon ui-icon-extlink"></span>
+                                            感染症罹患報告</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://www.itc.keio.ac.jp/ja/keiojp_webex.html" target="_blank"  data-ko-applid='112'><span class="ui-icon ui-icon-extlink"></span>
+                                            WebEx（WEB会議システム）</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://otp-libproxy2.keio.jp/app/kosmos/shib/" target="_blank"  data-ko-applid='20'><span class="ui-icon ui-icon-extlink"></span>
+                                            KOSMOS My Library</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://otp-libproxy2.keio.jp/app/remote/shib/" target="_blank"  data-ko-applid='55'><span class="ui-icon ui-icon-extlink"></span>
+                                            電子ジャーナル/データベース</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/kll/page/PortalAuthServlet" target="_blank"  data-ko-applid='75'><span class="ui-icon ui-icon-extlink"></span>
+                                            理工学研究科博士課程KLL助成金申請</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://citi.rcp.keio.ac.jp/citi/Regist" target="_blank"  data-ko-applid='103'><span class="ui-icon ui-icon-extlink"></span>
+                                            CITI Japanアカウント申請</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://jukunai-josei.rcp.keio.ac.jp/keiojp/" target="_blank"  data-ko-applid='114'><span class="ui-icon ui-icon-extlink"></span>
+                                            塾内研究助成</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </li>
+                            
+                            
+                            <li><a>授業                                                                                                                            </a>
+                                <ul class="cat_menu" style="width:100%;">
+                                    
+                                    <li>
+                                        <a href="https://gslbs.adst.keio.ac.jp/keiojp/" target="_blank"  data-ko-applid='51'><span class="ui-icon ui-icon-extlink"></span>
+                                            教育支援システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.edu.keio.jp/ess2/login?lang=jp" target="_blank"  data-ko-applid='91'><span class="ui-icon ui-icon-extlink"></span>
+                                            授業支援</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/rishu/login" target="_blank"  data-ko-applid='63'><span class="ui-icon ui-icon-extlink"></span>
+                                            学事WEBシステム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/entry/login" target="_blank"  data-ko-applid='70'><span class="ui-icon ui-icon-extlink"></span>
+                                            Webエントリーシステム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/prs/login" target="_blank"  data-ko-applid='90'><span class="ui-icon ui-icon-extlink"></span>
+                                            履修希望科目事前登録</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/rcs/login" target="_blank"  data-ko-applid='62'><span class="ui-icon ui-icon-extlink"></span>
+                                            学業成績表</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/tpw/PortalAuthenticateServlet" target="_blank"  data-ko-applid='69'><span class="ui-icon ui-icon-extlink"></span>
+                                            教職課程</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://wwwdc04.adst.keio.ac.jp/sdm_login.php" target="_blank"  data-ko-applid='78'><span class="ui-icon ui-icon-extlink"></span>
+                                            SDM e-Learning システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://econds.adst.keio.ac.jp/jspui/index.jsp" target="_blank"  data-ko-applid='94'><span class="ui-icon ui-icon-extlink"></span>
+                                            経済学部卒業論文要旨公開システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://gslbs.adst.keio.ac.jp/keiojp_law/" target="_blank"  data-ko-applid='87'><span class="ui-icon ui-icon-extlink"></span>
+                                            法務研究科（法科大学院）</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li><a>サービス                                                                                                                        </a>
+                                <ul class="cat_menu" style="width:100%;">
+                                    
+                                    <li>
+                                        <a href="https://mail.google.com/a/keio.jp/" target="_blank"  data-ko-applid='101'><span class="ui-icon ui-icon-extlink"></span>
+                                            慶應メール</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://authstrm2.keio.jp/" target="_blank"  data-ko-applid='64'><span class="ui-icon ui-icon-extlink"></span>
+                                            IT活用Web講座 </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://kd.keio.jp" target="_blank"  data-ko-applid='102'><span class="ui-icon ui-icon-extlink"></span>
+                                            ナレッジデリバー</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://fresh.keio.jp/" target="_blank"  data-ko-applid='105'><span class="ui-icon ui-icon-extlink"></span>
+                                            新入生お知らせ</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://slc.keio.jp/slc/login" target="_blank"  data-ko-applid='106'><span class="ui-icon ui-icon-extlink"></span>
+                                            ソフトウェアライセンス取得システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://keio.box.com/" target="_blank"  data-ko-applid='108'><span class="ui-icon ui-icon-extlink"></span>
+                                            Box</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/rid/login" target="_blank"  data-ko-applid='111'><span class="ui-icon ui-icon-extlink"></span>
+                                            感染症罹患報告</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://www.itc.keio.ac.jp/ja/keiojp_webex.html" target="_blank"  data-ko-applid='112'><span class="ui-icon ui-icon-extlink"></span>
+                                            WebEx（WEB会議システム）</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li><a>メディアセンター                                                                                                                </a>
+                                <ul class="cat_menu" style="width:100%;">
+                                    
+                                    <li>
+                                        <a href="https://otp-libproxy2.keio.jp/app/kosmos/shib/" target="_blank"  data-ko-applid='20'><span class="ui-icon ui-icon-extlink"></span>
+                                            KOSMOS My Library</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://otp-libproxy2.keio.jp/app/remote/shib/" target="_blank"  data-ko-applid='55'><span class="ui-icon ui-icon-extlink"></span>
+                                            電子ジャーナル/データベース</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li><a>就職・進路                                                                                                                      </a>
+                                <ul class="cat_menu" style="width:100%;">
+                                    
+                                    <li>
+                                        <a href="https://taikenki.adst.keio.ac.jp/" target="_blank"  data-ko-applid='120'><span class="ui-icon ui-icon-extlink"></span>
+                                            就職活動体験記システム</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://jukuin-contact.keio.jp/jca/page/LoginServlet" target="_blank"  data-ko-applid='104'><span class="ui-icon ui-icon-extlink"></span>
+                                            ＯＢ・ＯＧ訪問システム（eメール送信用）</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://sp-uc.career-tasu.jp/login/?id=e8d1870a4bdd6b5c6440e8df71dd1041" target="_blank"  data-ko-applid='65'><span class="ui-icon ui-icon-extlink"></span>
+                                            求人ナビ（キャリタスＵＣ）</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li><a>研究                                                                                                                            </a>
+                                <ul class="cat_menu" style="width:100%;">
+                                    
+                                    <li>
+                                        <a href="https://www2.adst.keio.ac.jp/kll/page/PortalAuthServlet" target="_blank"  data-ko-applid='75'><span class="ui-icon ui-icon-extlink"></span>
+                                            理工学研究科博士課程KLL助成金申請</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://citi.rcp.keio.ac.jp/citi/Regist" target="_blank"  data-ko-applid='103'><span class="ui-icon ui-icon-extlink"></span>
+                                            CITI Japanアカウント申請</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://jukunai-josei.rcp.keio.ac.jp/keiojp/" target="_blank"  data-ko-applid='114'><span class="ui-icon ui-icon-extlink"></span>
+                                            塾内研究助成</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </li>
+                            
+                            
+                        </ul>
+                        
+                        <!-- ■新旧移行関連ツール -->
+                        <h3 tabindex="0">慶應ID関連ツール</h3>
+                        <ul id="d_menu">
+                            <!-- 【新旧移行関連ツール】新旧メールアドレス変換 -->
+                            <li id="confAddress"><a id="confAddress-ACT_017"><span class="ui-icon ui-icon-extlink"></span>新旧メールアドレス変換</a></li>
+                            
+                        </ul>
+                        
+                        
+                        
+                        <!-- ■学生健康保険互助組合 -->
+                        <h3 tabindex="0">学生健康保険互助組合</h3>
+                        <ul id="d_menu">
+                            <li>
+                                <a href="https://gakukenpo.adst.keio.ac.jp/gakukenpo/" target="_blank"  data-ko-applid='117'><span class="ui-icon ui-icon-extlink"></span>医療給付申請</a>
+                            </li>
+                        </ul>
+                        
+                        
+                    </div>
+                </aside>
+                
+                <!-- hiddenボタン -->
+                <div style="display:none;" id="trgt_appl_hidden">
+                    <h3 id="mv_appl" class="hide_cont" tabindex="0">アプリケーションエリア</h3>
+                    
+                    
+                    <!-- 【Google Apps】メール -->
+                    <a class="hide_cont" href="https://mail.google.com/a/keio.jp/" target="_blank">メール</a>
+                    <!-- 【Google Apps】ドライブ -->
+                    <a class="hide_cont" href="https://drive.google.com/a/keio.jp/" target="_blank">ドライブ</a>
+                    <!-- 【Google Apps】カレンダー -->
+                    <a class="hide_cont" href="https://calendar.google.com/a/keio.jp/" target="_blank">カレンダー</a>
+                    <!-- 【Google Apps】グループ -->
+                    <a class="hide_cont" href="https://groups.google.com/a/keio.jp/" target="_blank">グループ</a>
+                    <!-- 【Google Apps】連絡先 -->
+                    <a class="hide_cont" href="https://www.google.com/contacts/a/keio.jp/" target="_blank">連絡先</a>
+                    <!-- 【新旧移行関連ツール】新旧メールアドレス変換 -->
+                    <form action="confAddress" method="post">
+                        <input type='submit' class='hide_cont' value='新旧メールアドレス変換'>
+                            <input type="hidden" name="ACT_017" value="新旧メールアドレス変換">
+                                </form>
+                    
+                    
+                    
+                    
+                    
+                    <a class="hide_cont"  href="https://gslbs.adst.keio.ac.jp/keiojp/" target="_blank"  data-ko-applid='51'>教育支援システム</a>
+                    
+                    <a class="hide_cont"  href="https://mail.google.com/a/keio.jp/" target="_blank"  data-ko-applid='101'>慶應メール</a>
+                    
+                    <a class="hide_cont"  href="https://taikenki.adst.keio.ac.jp/" target="_blank"  data-ko-applid='120'>就職活動体験記システム</a>
+                    
+                    <a class="hide_cont"  href="https://www.edu.keio.jp/ess2/login?lang=jp" target="_blank"  data-ko-applid='91'>授業支援</a>
+                    
+                    <a class="hide_cont"  href="https://jukuin-contact.keio.jp/jca/page/LoginServlet" target="_blank"  data-ko-applid='104'>ＯＢ・ＯＧ訪問システム（eメール送信用）</a>
+                    
+                    <a class="hide_cont"  href="https://www2.adst.keio.ac.jp/rishu/login" target="_blank"  data-ko-applid='63'>学事WEBシステム</a>
+                    
+                    <a class="hide_cont"  href="https://sp-uc.career-tasu.jp/login/?id=e8d1870a4bdd6b5c6440e8df71dd1041" target="_blank"  data-ko-applid='65'>求人ナビ（キャリタスＵＣ）</a>
+                    
+                    <a class="hide_cont"  href="https://www2.adst.keio.ac.jp/entry/login" target="_blank"  data-ko-applid='70'>Webエントリーシステム</a>
+                    
+                    <a class="hide_cont"  href="https://www2.adst.keio.ac.jp/prs/login" target="_blank"  data-ko-applid='90'>履修希望科目事前登録</a>
+                    
+                    <a class="hide_cont"  href="https://www2.adst.keio.ac.jp/rcs/login" target="_blank"  data-ko-applid='62'>学業成績表</a>
+                    
+                    <a class="hide_cont"  href="https://www2.adst.keio.ac.jp/tpw/PortalAuthenticateServlet" target="_blank"  data-ko-applid='69'>教職課程</a>
+                    
+                    <a class="hide_cont"  href="https://wwwdc04.adst.keio.ac.jp/sdm_login.php" target="_blank"  data-ko-applid='78'>SDM e-Learning システム</a>
+                    
+                    <a class="hide_cont"  href="https://econds.adst.keio.ac.jp/jspui/index.jsp" target="_blank"  data-ko-applid='94'>経済学部卒業論文要旨公開システム</a>
+                    
+                    <a class="hide_cont"  href="https://gslbs.adst.keio.ac.jp/keiojp_law/" target="_blank"  data-ko-applid='87'>法務研究科（法科大学院）</a>
+                    
+                    <a class="hide_cont"  href="https://authstrm2.keio.jp/" target="_blank"  data-ko-applid='64'>IT活用Web講座 </a>
+                    
+                    <a class="hide_cont"  href="https://kd.keio.jp" target="_blank"  data-ko-applid='102'>ナレッジデリバー</a>
+                    
+                    <a class="hide_cont"  href="https://fresh.keio.jp/" target="_blank"  data-ko-applid='105'>新入生お知らせ</a>
+                    
+                    <a class="hide_cont"  href="https://slc.keio.jp/slc/login" target="_blank"  data-ko-applid='106'>ソフトウェアライセンス取得システム</a>
+                    
+                    <a class="hide_cont"  href="https://keio.box.com/" target="_blank"  data-ko-applid='108'>Box</a>
+                    
+                    <a class="hide_cont"  href="https://www2.adst.keio.ac.jp/rid/login" target="_blank"  data-ko-applid='111'>感染症罹患報告</a>
+                    
+                    <a class="hide_cont"  href="http://www.itc.keio.ac.jp/ja/keiojp_webex.html" target="_blank"  data-ko-applid='112'>WebEx（WEB会議システム）</a>
+                    
+                    <a class="hide_cont"  href="https://otp-libproxy2.keio.jp/app/kosmos/shib/" target="_blank"  data-ko-applid='20'>KOSMOS My Library</a>
+                    
+                    <a class="hide_cont"  href="https://otp-libproxy2.keio.jp/app/remote/shib/" target="_blank"  data-ko-applid='55'>電子ジャーナル/データベース</a>
+                    
+                    <a class="hide_cont"  href="https://www2.adst.keio.ac.jp/kll/page/PortalAuthServlet" target="_blank"  data-ko-applid='75'>理工学研究科博士課程KLL助成金申請</a>
+                    
+                    <a class="hide_cont"  href="https://citi.rcp.keio.ac.jp/citi/Regist" target="_blank"  data-ko-applid='103'>CITI Japanアカウント申請</a>
+                    
+                    <a class="hide_cont"  href="https://jukunai-josei.rcp.keio.ac.jp/keiojp/" target="_blank"  data-ko-applid='114'>塾内研究助成</a>
+                    
+                </div>
+                
+                <!-- sp menu -->
+                <a id='form_sp' href="" target="_blank" class="sp">
+                </a>
+                <div class="info clearfix sp">
+                    <div>
+                        <h2>Application</h2>
+                    </div>
+                </div>
+                <aside class='side_contents clearfix'>
+                    <!--div class="selector" id="uniform-undefined">
+                     <span style="-moz-user-select: none;">表示</span>
+                     <select name="applList" style="opacity: 0;"  -->
+                    <select name="applList" >
+                        <option value="" >-アプリケーションを選択してください-</option>
+                        
+                        <!-- ■よく使われる項目 -->
+                        <optgroup label="よく使われる項目" class='grp_a_menu'>
+                            
+                            <option value="https://gslbs.adst.keio.ac.jp/keiojp/"  data-ko-applid='51'>教育支援システム</option>
+                            
+                            <option value="https://www.edu.keio.jp/ess2/login?lang=jp"  data-ko-applid='91'>授業支援</option>
+                            
+                            <option value="https://otp-libproxy2.keio.jp/app/kosmos/shib/"  data-ko-applid='20'>KOSMOS My Library</option>
+                            
+                        </optgroup>
+                        
+                        
+                        
+                        <!-- ■Google Apps -->
+                        <optgroup label="G Suite" class='grp_c_menu'>
+                            <!-- 【Google Apps】メール -->
+                            <option value="https://mail.google.com/a/keio.jp/" >メール</option>
+                            <!-- 【Google Apps】ドライブ -->
+                            <option value="https://drive.google.com/a/keio.jp/" >ドライブ</option>
+                            <!-- 【Google Apps】カレンダー -->
+                            <option value="https://calendar.google.com/a/keio.jp/" >カレンダー</option>
+                            <!-- 【Google Apps】グループ -->
+                            <option value="https://groups.google.com/a/keio.jp/" >グループ</option>
+                            <!-- 【Google Apps】連絡先 -->
+                            <option value="https://www.google.com/contacts/a/keio.jp/" >連絡先</option>
+                        </optgroup>
+                        
+                        
+                        
+                        
+                        <!-- ■Wi-Fi表示 -->
+                        
+                        <optgroup label="無線LAN接続設定" class='grp_e_menu'>
+                            <option value="http://www.itc.keio.ac.jp/ja/net_connect_wireless_lan.html" >keiomobile2 / eduroam</option>
+                        </optgroup>
+                        
+                        
+                        
+                        
+                        <!-- ■Application-->
+                        <optgroup label="Application" class='grp_b_menu'>
+                            
+                            <option value="https://gslbs.adst.keio.ac.jp/keiojp/"  data-ko-applid='51'>教育支援システム</option>
+                            
+                            <option value="https://mail.google.com/a/keio.jp/"  data-ko-applid='101'>慶應メール</option>
+                            
+                            <option value="https://taikenki.adst.keio.ac.jp/"  data-ko-applid='120'>就職活動体験記システム</option>
+                            
+                            <option value="https://www.edu.keio.jp/ess2/login?lang=jp"  data-ko-applid='91'>授業支援</option>
+                            
+                            <option value="https://jukuin-contact.keio.jp/jca/page/LoginServlet"  data-ko-applid='104'>ＯＢ・ＯＧ訪問システム（eメール送信用）</option>
+                            
+                            <option value="https://www2.adst.keio.ac.jp/rishu/login"  data-ko-applid='63'>学事WEBシステム</option>
+                            
+                            <option value="https://sp-uc.career-tasu.jp/login/?id=e8d1870a4bdd6b5c6440e8df71dd1041"  data-ko-applid='65'>求人ナビ（キャリタスＵＣ）</option>
+                            
+                            <option value="https://www2.adst.keio.ac.jp/entry/login"  data-ko-applid='70'>Webエントリーシステム</option>
+                            
+                            <option value="https://www2.adst.keio.ac.jp/prs/login"  data-ko-applid='90'>履修希望科目事前登録</option>
+                            
+                            <option value="https://www2.adst.keio.ac.jp/rcs/login"  data-ko-applid='62'>学業成績表</option>
+                            
+                            <option value="https://www2.adst.keio.ac.jp/tpw/PortalAuthenticateServlet"  data-ko-applid='69'>教職課程</option>
+                            
+                            <option value="https://wwwdc04.adst.keio.ac.jp/sdm_login.php"  data-ko-applid='78'>SDM e-Learning システム</option>
+                            
+                            <option value="https://econds.adst.keio.ac.jp/jspui/index.jsp"  data-ko-applid='94'>経済学部卒業論文要旨公開システム</option>
+                            
+                            <option value="https://gslbs.adst.keio.ac.jp/keiojp_law/"  data-ko-applid='87'>法務研究科（法科大学院）</option>
+                            
+                            <option value="https://authstrm2.keio.jp/"  data-ko-applid='64'>IT活用Web講座 </option>
+                            
+                            <option value="https://kd.keio.jp"  data-ko-applid='102'>ナレッジデリバー</option>
+                            
+                            <option value="https://fresh.keio.jp/"  data-ko-applid='105'>新入生お知らせ</option>
+                            
+                            <option value="https://slc.keio.jp/slc/login"  data-ko-applid='106'>ソフトウェアライセンス取得システム</option>
+                            
+                            <option value="https://keio.box.com/"  data-ko-applid='108'>Box</option>
+                            
+                            <option value="https://www2.adst.keio.ac.jp/rid/login"  data-ko-applid='111'>感染症罹患報告</option>
+                            
+                            <option value="http://www.itc.keio.ac.jp/ja/keiojp_webex.html"  data-ko-applid='112'>WebEx（WEB会議システム）</option>
+                            
+                            <option value="https://otp-libproxy2.keio.jp/app/kosmos/shib/"  data-ko-applid='20'>KOSMOS My Library</option>
+                            
+                            <option value="https://otp-libproxy2.keio.jp/app/remote/shib/"  data-ko-applid='55'>電子ジャーナル/データベース</option>
+                            
+                            <option value="https://www2.adst.keio.ac.jp/kll/page/PortalAuthServlet"  data-ko-applid='75'>理工学研究科博士課程KLL助成金申請</option>
+                            
+                            <option value="https://citi.rcp.keio.ac.jp/citi/Regist"  data-ko-applid='103'>CITI Japanアカウント申請</option>
+                            
+                            <option value="https://jukunai-josei.rcp.keio.ac.jp/keiojp/"  data-ko-applid='114'>塾内研究助成</option>
+                            
+                        </optgroup>
+                        
+                        <!-- ■新旧移行関連ツール -->
+                        <optgroup label="慶應ID関連ツール" class='grp_d_menu'>
+                            <!-- 【新旧移行関連ツール】メール移行不備状況 -->
+                            <option id="ACT_017" value="confAddress" >新旧メールアドレス変換</option>
+                            
+                        </optgroup>
+                        
+                        
+                        
+                        <!-- ■学生健康保険互助組合 -->
+                        <optgroup label="学生健康保険互助組合" class='grp_d_menu'>
+                            <option value="https://gakukenpo.adst.keio.ac.jp/gakukenpo/"  data-ko-applid='117'>医療給付申請</option>
+                        </optgroup>
+                        
+                        
+                        
+                    </select>
+                    <input type="button" name="apl_disp" id="apl_disp" value="表示"  />
+                    
+                </aside>
+                <!-- /sp menu -->
+                <!-- right contents-->
+                
+                
+                
+                
+                <div class="info clearfix" id="info">
+                    <div>
+                        <h2 tabindex="0">Information</h2>
+                        <h3 style="display:none;" id="mv_info" tabindex="0" class="hide_cont">インフォメーションエリア</h3>
+                        
+                        <button class="dialog_disp_all">すべて表示</button>
+                    </div>
+                    <div class='cat_list'>
+                        <ul>
+                            <li>カテゴリ</li>
+                            <li><a id='type_0'>すべて </a></li>
+                            
+                            <li><a id='type_4'>授業                                                                                                                            </a></li>
+                            
+                            <li><a id='type_-1'>未カテゴリ </a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    
+                    <article class="info-cont clearfix  type_-1">
+                        <h3>
+                            
+                            <a class='dialog_disp_359' tabindex="0">【国際センター主催】2018年度短期海外研修プログラム（夏季）追加募集要項について（※応募期間：5月7日（月）〜5月9日（水））</a>
+                        </h3>
+                        <div class='btn_all'><button class='dialog_disp_359'>詳細</button></div>
+                        <div>
+                            <span>更新日:2018/05/01 14:05</span>
+                            <span>お問い合わせ先:学生部国際交流支援</span>
+                        </div>
+                        <p class="info-detail">★2018年度短期研修プログラム（夏季）の追加募集について
+                        
+                        国際センターが夏休みに開催する短期海外研修プログラム（夏季）では、来週より追加募集を行います。
+                        詳細は下記URLよりご確認ください。
+                        皆さんからのご応募、お待ちしてます！
+                        
+                        <a href="http://www.ic.keio.ac.jp/keio_student/short_prog/summer_prog_index.html" target="_blank">http://www.ic.keio.ac.jp/keio_student/short_prog/summer_prog_index.html</a>
+                        
+                        
+                        ★募集のスケジュールについて
+                        ＜応募日程＞
+                        オンラインデータ登録：5月7日（月）～5月9日（水）午前9時
+                        応募書類提出：5月8日（火）～5月9日（水） 各キャンパス提出窓口終了時刻
+                        
+                        ＜選考日程＞
+                        面接：5月15日（火）18：00～
+                        合格発表：5月17日（木）
+                        
+                        ＜合格後手続き＞
+                        参加費用納入：5月22日（火）
+                        事前研修：6月23日（土）終日
+                        
+                        不明点等ございましたら、お気軽に下記までご連絡ください。
+                        
+                        
+                        学生部国際交流支援グループ（三田キャンパス）
+                        短期海外研修プログラム担当
+                        TEL ： 03-5427-1613</p>
+                        
+                        <div class='dialog info_dialog child_info' id='dialog_359' title='Information'>
+                            <article class="clearfix">
+                                <h3>
+                                    
+                                    <a class='dialog_disp'>【国際センター主催】2018年度短期海外研修プログラム（夏季）追加募集要項について（※応募期間：5月7日（月）〜5月9日（水））</a>
+                                </h3>
+                                <div>
+                                    <ul>
+                                        <li>カテゴリ:
+                                            
+                                        </li>
+                                        
+                                        <li>対象システム:
+                                            
+                                            その他&nbsp;
+                                            
+                                        </li>
+                                        <li><span>表示期間:2018/05/01 14:00&nbsp;-</span>&nbsp;2018/05/09 10:00</li>
+                                        <li>更新日:2018/05/01 14:05</li>
+                                    </ul>
+                                </div>
+                                <p>★2018年度短期研修プログラム（夏季）の追加募集について<BR><BR>国際センターが夏休みに開催する短期海外研修プログラム（夏季）では、来週より追加募集を行います。<BR>詳細は下記URLよりご確認ください。 <BR>皆さんからのご応募、お待ちしてます！<BR><BR><a href="http://www.ic.keio.ac.jp/keio_student/short_prog/summer_prog_index.html" target="_blank">http://www.ic.keio.ac.jp/keio_student/short_prog/summer_prog_index.html</a><BR><BR><BR>★募集のスケジュールについて<BR>＜応募日程＞<BR>オンラインデータ登録：5月7日（月）～5月9日（水）午前9時<BR>応募書類提出：5月8日（火）～5月9日（水） 各キャンパス提出窓口終了時刻<BR><BR>＜選考日程＞<BR>面接：5月15日（火）18：00～<BR>合格発表：5月17日（木）<BR><BR>＜合格後手続き＞<BR>参加費用納入：5月22日（火） <BR>事前研修：6月23日（土）終日<BR><BR>不明点等ございましたら、お気軽に下記までご連絡ください。<BR><BR><BR>学生部国際交流支援グループ（三田キャンパス）　<BR>短期海外研修プログラム担当<BR>TEL ： 03-5427-1613</p>
+                                <div class='help'>
+                                    <span>お問い合わせ先:学生部国際交流支援</span><span>/<a href="mailto:ic-zaigai@adst.keio.ac.jp">ic-zaigai@adst.keio.ac.jp</a></span>
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+                    
+                    <article class="info-cont clearfix  type_-1">
+                        <h3>
+                            
+                            <a class='dialog_disp_351' tabindex="0">2018年度学生健康診断のお知らせ </a>
+                        </h3>
+                        <div class='btn_all'><button class='dialog_disp_351'>詳細</button></div>
+                        <div>
+                            <span>更新日:2018/03/13 14:00</span>
+                            <span>お問い合わせ先:保健管理センター</span>
+                        </div>
+                        <p class="info-detail"><a href="http://www.hcc.keio.ac.jp/ja/health-checkup/student/examination.html" target="_blank">2018年度学生健康診断のお知らせ</a>
+                        健診を受診されていない場合には、以下のことができなくなりますのでご注意ください。
+                        ・就職活動および奨学金申請などで必要な「健康診断証明書」の発行
+                        ・体育実技の履修
+                        ・「学割証」の発行 </p>
+                        
+                        <div class='dialog info_dialog child_info' id='dialog_351' title='Information'>
+                            <article class="clearfix">
+                                <h3>
+                                    
+                                    <a class='dialog_disp'>2018年度学生健康診断のお知らせ </a>
+                                </h3>
+                                <div>
+                                    <ul>
+                                        <li>カテゴリ:
+                                            
+                                        </li>
+                                        
+                                        <li>対象システム:
+                                            
+                                            その他&nbsp;
+                                            
+                                        </li>
+                                        <li><span>表示期間:2018/03/20 08:30&nbsp;-</span>&nbsp;2018/05/12 16:00</li>
+                                        <li>更新日:2018/03/13 14:00</li>
+                                    </ul>
+                                </div>
+                                <p><a href="http://www.hcc.keio.ac.jp/ja/health-checkup/student/examination.html" target="_blank">2018年度学生健康診断のお知らせ</a><BR>健診を受診されていない場合には、以下のことができなくなりますのでご注意ください。<BR>・就職活動および奨学金申請などで必要な「健康診断証明書」の発行<BR>・体育実技の履修<BR>・「学割証」の発行 </p>
+                                <div class='help'>
+                                    <span>お問い合わせ先:保健管理センター</span><span>/<a href="mailto:hc@info.keio.ac.jp">hc@info.keio.ac.jp</a></span>
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+                    
+                    <article class="info-cont clearfix  type_4">
+                        <h3>
+                            
+                            <a class='dialog_disp_1' tabindex="0">学事Webシステム メンテナンス予定</a>
+                        </h3>
+                        <div class='btn_all'><button class='dialog_disp_1'>詳細</button></div>
+                        <div>
+                            <span>更新日:2013/12/07 10:29</span>
+                            <span>お問い合わせ先:学生部</span>
+                        </div>
+                        <p class="info-detail">下記の時間帯は稼働を停止しておりますので、学事Webシステムを利用することができません。
+                        　毎日 午前 4 時から 1 時間程度
+                        予めご了承の程、宜しくお願い致します。</p>
+                        
+                        <div class='dialog info_dialog child_info' id='dialog_1' title='Information'>
+                            <article class="clearfix">
+                                <h3>
+                                    
+                                    <a class='dialog_disp'>学事Webシステム メンテナンス予定</a>
+                                </h3>
+                                <div>
+                                    <ul>
+                                        <li>カテゴリ:
+                                            
+                                            授業
+                                            
+                                        </li>
+                                        
+                                        <li>対象システム:
+                                            
+                                            学事WEBシステム&nbsp;
+                                            
+                                        </li>
+                                        <li><span>表示期間:2013/12/07 00:00&nbsp;-</span>&nbsp;9999/12/31 00:00</li>
+                                        <li>更新日:2013/12/07 10:29</li>
+                                    </ul>
+                                </div>
+                                <p>下記の時間帯は稼働を停止しておりますので、学事Webシステムを利用することができません。<BR>　毎日 午前 4 時から 1 時間程度<BR>予めご了承の程、宜しくお願い致します。</p>
+                                <div class='help'>
+                                    <span>お問い合わせ先:学生部</span><span>/<a href="mailto:gsupport_sys@info.keio.ac.jp">gsupport_sys@info.keio.ac.jp</a></span>
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+                    
+                    <script type="text/javascript">
+                        var sstrg = sessionStorage.getItem('i_type');
+                        var msgstrg = sessionStorage.getItem('m_type');
+                        if(sstrg == null) {
+                            sstrg = 'type_0';
+                        }
+                    if(msgstrg == null) {
+                        msgstrg = 'msg_1';
+                    }
+                    infoCatList(sstrg);
+                    getSorting(msgstrg);
+                    $("a#" + sstrg).parent('li').addClass("type_state");
+                    $("a#" + msgstrg).parent('li').addClass("type_state");
+                        </script>
+                    
+                    
+                    <div class='dialog info_dialog' id='dialog_all' title='Information'></div>
+                    
+                </div>
+                <!-- footer-->
+                <footer class='common'>&copy; 2014, Keio University.</footer>
+                <!-- /footer-->
+            </div>
+            <!-- /main contents -->
+        </div>
+        <!-- /wrap -->
+        <!-- PAGE TOP -->
+        <div id="page-top" class="mt10" style="display: block;text-align:right"><a href="#p_top">PAGE&nbsp;TOP</a></div>
+        <!-- /PAGE TOP -->
+        
+        <div class='dialog' id='agree_searchid_dialog'>
+            <img style="float:left" src="images/dlg_caution.gif" alt="caution"/><p style="margin-top: 30px;"><p>塾内規程や各種法令を遵守する場合のみ「同意する」を押して利用してください。
+            <p id="delete_trgt_mail" style="margin-top: 10px;text-align:center;clear:both"></p>
+            <input type="hidden" name="delete_trgt_id" id="delete_trgt_id" value="">
+                </div>
+        
+        
+        <!-- MAIL NOTICE -->
+        <!--3/3
+         <div id="mailNotice" class="ui-state-highlight ui-corner-all">
+         <p><img src="images/mail_09.jpg" ><span>通知用メールアドレス</span></p>
+         <p>登録されたメールアドレスは、慶應義塾からのお知らせ等の各種通知に関する機能でのみ使用します。
+         <br><br>
+         <a class="nm_oc">後で行う</a>
+         <a class="nm_sbmt">確認する</a>
+         <a class="nm_nodisp">今後表示しない</a>
+         </p>
+         </div>
+         <div align="right" id="disp-nm" class="mt10" style="display: none;"><a class="nm_oc">通知用メールアドレス</a></div>
+         <div class='dialog nmDialog' id='nmDialog'>
+         <img style="float:left" src="images/dlg_info.gif"/><p style="margin-top: 30px;">下記のメールアドレスを削除します。<br>よろしいですか？</p>
+         </div>
+         <form id="exeConfMailAddr" action="menu" method="post">
+         <input type="hidden" name="ACT_010" value="ACT_010">
+         </form>
+         -->
+        <!-- /MAIL NOTICE -->
+        
+    </body>
+</html>
+
+
+

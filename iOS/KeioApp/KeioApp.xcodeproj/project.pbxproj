@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E375CFF6E905ACCE4A2DD77 /* Pods_KeioAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EA0039739BC75C918EE047 /* Pods_KeioAppTests.framework */; };
+		6A54B592C18FC44119BD79DF /* Pods_KeioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21679B384080F4B7EA6E329F /* Pods_KeioApp.framework */; };
+		C71BAF1F20C29A6F0084B808 /* EducationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF1E20C29A6F0084B808 /* EducationViewController.m */; };
+		C71BAF2320C2A0950084B808 /* Education.m in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF2220C2A0950084B808 /* Education.m */; };
+		C71BAF2520C2A1000084B808 /* EducationRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF2420C2A1000084B808 /* EducationRepository.m */; };
+		C71BAF2720C2BB790084B808 /* PortalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF2620C2BB790084B808 /* PortalMessage.m */; };
+		C71BAF2A20C2BC020084B808 /* EducationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF2920C2BC020084B808 /* EducationMessage.m */; };
+		C71BAF2F20C2C95A0084B808 /* EducationMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF2E20C2C95A0084B808 /* EducationMessageTableViewCell.m */; };
+		C71D8EEE20C6CB8F00642870 /* Class.m in Sources */ = {isa = PBXBuildFile; fileRef = C71D8EED20C6CB8F00642870 /* Class.m */; };
+		C71D8EF120C6CF5D00642870 /* ClassRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = C71D8EF020C6CF5D00642870 /* ClassRepository.m */; };
+		C738985D20BEA9AA0044EF22 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C738985C20BEA9AA0044EF22 /* Constants.m */; };
+		C738986020BEE3F70044EF22 /* PortalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C738985F20BEE3F70044EF22 /* PortalViewController.m */; };
+		C75441A520C7CE02001626E7 /* Scraping.m in Sources */ = {isa = PBXBuildFile; fileRef = C75441A420C7CE02001626E7 /* Scraping.m */; };
+		C76B945520BD93B200DF42EF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76B945420BD93B200DF42EF /* LoginViewController.m */; };
+		C794AA0720BFE89E00F1742F /* PortalRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = C794AA0620BFE89E00F1742F /* PortalRepository.m */; };
+		C794AA0B20BFEA0E00F1742F /* Me.m in Sources */ = {isa = PBXBuildFile; fileRef = C794AA0A20BFEA0E00F1742F /* Me.m */; };
+		C794AA1020BFECB500F1742F /* Portal.m in Sources */ = {isa = PBXBuildFile; fileRef = C794AA0F20BFECB500F1742F /* Portal.m */; };
+		C794AA1320C039BC00F1742F /* PortalMessageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C794AA1220C039BC00F1742F /* PortalMessageDetailViewController.m */; };
+		C794AA1620C12D5900F1742F /* PortalMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C794AA1520C12D5900F1742F /* PortalMessageTableViewCell.m */; };
+		C7B8960520CB74C600F63E88 /* AccessKey.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B8960420CB74C600F63E88 /* AccessKey.m */; };
+		C7C642E520C9695400614DBA /* LoginDataRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C642E420C9695400614DBA /* LoginDataRepository.m */; };
+		C7D9ED1D20C581EF004F62F6 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D9ED1C20C581EF004F62F6 /* ClassViewController.m */; };
+		C7D9ED2020C58210004F62F6 /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D9ED1F20C58210004F62F6 /* ClassTableViewCell.m */; };
+		C7DAA20520BC3F9F0070CE93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DAA20420BC3F9F0070CE93 /* AppDelegate.m */; };
+		C7DAA20820BC3F9F0070CE93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DAA20720BC3F9F0070CE93 /* ViewController.m */; };
+		C7DAA20B20BC3F9F0070CE93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DAA20920BC3F9F0070CE93 /* Main.storyboard */; };
+		C7DAA20E20BC3F9F0070CE93 /* KeioApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7DAA20C20BC3F9F0070CE93 /* KeioApp.xcdatamodeld */; };
+		C7DAA21020BC3FA00070CE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DAA20F20BC3FA00070CE93 /* Assets.xcassets */; };
+		C7DAA21320BC3FA00070CE93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DAA21120BC3FA00070CE93 /* LaunchScreen.storyboard */; };
+		C7DAA21620BC3FA00070CE93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DAA21520BC3FA00070CE93 /* main.m */; };
+		C7DAA22020BC3FA00070CE93 /* KeioAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DAA21F20BC3FA00070CE93 /* KeioAppTests.m */; };
+		C7DAA23020BC487E0070CE93 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DAA22F20BC487E0070CE93 /* User.m */; };
+		C7E9BF0B20C7EEC2009E9885 /* utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E9BF0A20C7EEC2009E9885 /* utils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7DAA21C20BC3FA00070CE93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7DAA1F820BC3F9F0070CE93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7DAA1FF20BC3F9F0070CE93;
+			remoteInfo = KeioApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21679B384080F4B7EA6E329F /* Pods_KeioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		709F7BEB91C79377A3198634 /* Pods-KeioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeioApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeioApp/Pods-KeioApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7B6D13D80D4A211FD4E8CCFD /* Pods-KeioAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeioAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeioAppTests/Pods-KeioAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7D90F531747BFD92A91DDB5 /* Pods-KeioAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeioAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeioAppTests/Pods-KeioAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5EA0039739BC75C918EE047 /* Pods_KeioAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeioAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71BAF1D20C29A6F0084B808 /* EducationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducationViewController.h; sourceTree = "<group>"; };
+		C71BAF1E20C29A6F0084B808 /* EducationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducationViewController.m; sourceTree = "<group>"; };
+		C71BAF2020C29F250084B808 /* EducationRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducationRepository.h; sourceTree = "<group>"; };
+		C71BAF2120C29FE50084B808 /* Education.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Education.h; sourceTree = "<group>"; };
+		C71BAF2220C2A0950084B808 /* Education.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Education.m; sourceTree = "<group>"; };
+		C71BAF2420C2A1000084B808 /* EducationRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducationRepository.m; sourceTree = "<group>"; };
+		C71BAF2620C2BB790084B808 /* PortalMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortalMessage.m; sourceTree = "<group>"; };
+		C71BAF2820C2BBF40084B808 /* EducationMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducationMessage.h; sourceTree = "<group>"; };
+		C71BAF2920C2BC020084B808 /* EducationMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducationMessage.m; sourceTree = "<group>"; };
+		C71BAF2D20C2C95A0084B808 /* EducationMessageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EducationMessageTableViewCell.h; sourceTree = "<group>"; };
+		C71BAF2E20C2C95A0084B808 /* EducationMessageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EducationMessageTableViewCell.m; sourceTree = "<group>"; };
+		C71D8EEC20C6CB0100642870 /* Class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class.h; sourceTree = "<group>"; };
+		C71D8EED20C6CB8F00642870 /* Class.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class.m; sourceTree = "<group>"; };
+		C71D8EEF20C6CE9600642870 /* ClassRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassRepository.h; sourceTree = "<group>"; };
+		C71D8EF020C6CF5D00642870 /* ClassRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassRepository.m; sourceTree = "<group>"; };
+		C738985B20BEA9290044EF22 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C738985C20BEA9AA0044EF22 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		C738985E20BEE3F70044EF22 /* PortalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortalViewController.h; sourceTree = "<group>"; };
+		C738985F20BEE3F70044EF22 /* PortalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortalViewController.m; sourceTree = "<group>"; };
+		C75441A320C7CD81001626E7 /* Scraping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scraping.h; sourceTree = "<group>"; };
+		C75441A420C7CE02001626E7 /* Scraping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scraping.m; sourceTree = "<group>"; };
+		C76B945320BD93B200DF42EF /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C76B945420BD93B200DF42EF /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C7797FF220C7EE3500D396D6 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		C794AA0520BFE77F00F1742F /* PortalRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortalRepository.h; sourceTree = "<group>"; };
+		C794AA0620BFE89E00F1742F /* PortalRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortalRepository.m; sourceTree = "<group>"; };
+		C794AA0820BFE97900F1742F /* Portal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Portal.h; sourceTree = "<group>"; };
+		C794AA0920BFE9AC00F1742F /* Me.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Me.h; sourceTree = "<group>"; };
+		C794AA0A20BFEA0E00F1742F /* Me.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Me.m; sourceTree = "<group>"; };
+		C794AA0C20BFEB9200F1742F /* PortalMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortalMessage.h; sourceTree = "<group>"; };
+		C794AA0F20BFECB500F1742F /* Portal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Portal.m; sourceTree = "<group>"; };
+		C794AA1120C039BC00F1742F /* PortalMessageDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortalMessageDetailViewController.h; sourceTree = "<group>"; };
+		C794AA1220C039BC00F1742F /* PortalMessageDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortalMessageDetailViewController.m; sourceTree = "<group>"; };
+		C794AA1420C12D5900F1742F /* PortalMessageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortalMessageTableViewCell.h; sourceTree = "<group>"; };
+		C794AA1520C12D5900F1742F /* PortalMessageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortalMessageTableViewCell.m; sourceTree = "<group>"; };
+		C7B8960320CB749000F63E88 /* AccessKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessKey.h; sourceTree = "<group>"; };
+		C7B8960420CB74C600F63E88 /* AccessKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessKey.m; sourceTree = "<group>"; };
+		C7C642E420C9695400614DBA /* LoginDataRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDataRepository.m; sourceTree = "<group>"; };
+		C7D9ED1B20C581EF004F62F6 /* ClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassViewController.h; sourceTree = "<group>"; };
+		C7D9ED1C20C581EF004F62F6 /* ClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
+		C7D9ED1E20C58210004F62F6 /* ClassTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassTableViewCell.h; sourceTree = "<group>"; };
+		C7D9ED1F20C58210004F62F6 /* ClassTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewCell.m; sourceTree = "<group>"; };
+		C7DAA20020BC3F9F0070CE93 /* KeioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DAA20320BC3F9F0070CE93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7DAA20420BC3F9F0070CE93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7DAA20620BC3F9F0070CE93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C7DAA20720BC3F9F0070CE93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C7DAA20A20BC3F9F0070CE93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7DAA20D20BC3F9F0070CE93 /* KeioApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeioApp.xcdatamodel; sourceTree = "<group>"; };
+		C7DAA20F20BC3FA00070CE93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7DAA21220BC3FA00070CE93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7DAA21420BC3FA00070CE93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7DAA21520BC3FA00070CE93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7DAA21B20BC3FA00070CE93 /* KeioAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeioAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DAA21F20BC3FA00070CE93 /* KeioAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeioAppTests.m; sourceTree = "<group>"; };
+		C7DAA22120BC3FA00070CE93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7DAA22B20BC470A0070CE93 /* KeioApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeioApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7DAA22E20BC48200070CE93 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C7DAA22F20BC487E0070CE93 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C7E9BF0A20C7EEC2009E9885 /* utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = utils.m; sourceTree = "<group>"; };
+		C7E9BF0C20C82519009E9885 /* LoginDataRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDataRepository.h; sourceTree = "<group>"; };
+		D46495820D548AC98F1562C3 /* Pods-KeioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeioApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeioApp/Pods-KeioApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7DAA1FD20BC3F9F0070CE93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A54B592C18FC44119BD79DF /* Pods_KeioApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DAA21820BC3FA00070CE93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E375CFF6E905ACCE4A2DD77 /* Pods_KeioAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40B8298CCCA309B03225A4B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21679B384080F4B7EA6E329F /* Pods_KeioApp.framework */,
+				B5EA0039739BC75C918EE047 /* Pods_KeioAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C71BAF3020C2C96D0084B808 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C7D9ED1A20C581D7004F62F6 /* Class */,
+				C71BAF3120C2C9830084B808 /* Portal */,
+				C71BAF3220C2C98F0084B808 /* Education */,
+				C76B945320BD93B200DF42EF /* LoginViewController.h */,
+				C76B945420BD93B200DF42EF /* LoginViewController.m */,
+				C7DAA20620BC3F9F0070CE93 /* ViewController.h */,
+				C7DAA20720BC3F9F0070CE93 /* ViewController.m */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		C71BAF3120C2C9830084B808 /* Portal */ = {
+			isa = PBXGroup;
+			children = (
+				C738985E20BEE3F70044EF22 /* PortalViewController.h */,
+				C738985F20BEE3F70044EF22 /* PortalViewController.m */,
+				C794AA1120C039BC00F1742F /* PortalMessageDetailViewController.h */,
+				C794AA1220C039BC00F1742F /* PortalMessageDetailViewController.m */,
+				C794AA1420C12D5900F1742F /* PortalMessageTableViewCell.h */,
+				C794AA1520C12D5900F1742F /* PortalMessageTableViewCell.m */,
+			);
+			path = Portal;
+			sourceTree = "<group>";
+		};
+		C71BAF3220C2C98F0084B808 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				C71BAF1D20C29A6F0084B808 /* EducationViewController.h */,
+				C71BAF1E20C29A6F0084B808 /* EducationViewController.m */,
+				C71BAF2D20C2C95A0084B808 /* EducationMessageTableViewCell.h */,
+				C71BAF2E20C2C95A0084B808 /* EducationMessageTableViewCell.m */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
+		C71BAF3320C2CA110084B808 /* portal */ = {
+			isa = PBXGroup;
+			children = (
+				C71BAF2620C2BB790084B808 /* PortalMessage.m */,
+				C794AA0C20BFEB9200F1742F /* PortalMessage.h */,
+				C794AA0F20BFECB500F1742F /* Portal.m */,
+				C794AA0820BFE97900F1742F /* Portal.h */,
+			);
+			path = portal;
+			sourceTree = "<group>";
+		};
+		C71BAF3420C2CA180084B808 /* education */ = {
+			isa = PBXGroup;
+			children = (
+				C71BAF2120C29FE50084B808 /* Education.h */,
+				C71BAF2220C2A0950084B808 /* Education.m */,
+				C71BAF2820C2BBF40084B808 /* EducationMessage.h */,
+				C71BAF2920C2BC020084B808 /* EducationMessage.m */,
+			);
+			path = education;
+			sourceTree = "<group>";
+		};
+		C71BAF3520C2CA690084B808 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				C7DAA22A20BC46F90070CE93 /* model */,
+				C794AA0420BFE76200F1742F /* repository */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		C71D8EEB20C6CACD00642870 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				C71D8EEC20C6CB0100642870 /* Class.h */,
+				C71D8EED20C6CB8F00642870 /* Class.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		C75441A220C7CD31001626E7 /* infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C75441A320C7CD81001626E7 /* Scraping.h */,
+				C75441A420C7CE02001626E7 /* Scraping.m */,
+			);
+			path = infrastructure;
+			sourceTree = "<group>";
+		};
+		C794AA0420BFE76200F1742F /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				C794AA0520BFE77F00F1742F /* PortalRepository.h */,
+				C794AA0620BFE89E00F1742F /* PortalRepository.m */,
+				C71BAF2020C29F250084B808 /* EducationRepository.h */,
+				C71BAF2420C2A1000084B808 /* EducationRepository.m */,
+				C71D8EEF20C6CE9600642870 /* ClassRepository.h */,
+				C71D8EF020C6CF5D00642870 /* ClassRepository.m */,
+				C7E9BF0C20C82519009E9885 /* LoginDataRepository.h */,
+				C7C642E420C9695400614DBA /* LoginDataRepository.m */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		C7985F2820CEB15700030A2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7985F2920CEB16100030A2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7D9ED1A20C581D7004F62F6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C7D9ED1B20C581EF004F62F6 /* ClassViewController.h */,
+				C7D9ED1C20C581EF004F62F6 /* ClassViewController.m */,
+				C7D9ED1E20C58210004F62F6 /* ClassTableViewCell.h */,
+				C7D9ED1F20C58210004F62F6 /* ClassTableViewCell.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		C7DAA1F720BC3F9F0070CE93 = {
+			isa = PBXGroup;
+			children = (
+				C7DAA20220BC3F9F0070CE93 /* KeioApp */,
+				C7DAA21E20BC3FA00070CE93 /* KeioAppTests */,
+				C7DAA20120BC3F9F0070CE93 /* Products */,
+				C86C420B52938C30FBC169FA /* Pods */,
+				40B8298CCCA309B03225A4B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7DAA20120BC3F9F0070CE93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7DAA20020BC3F9F0070CE93 /* KeioApp.app */,
+				C7DAA21B20BC3FA00070CE93 /* KeioAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7DAA20220BC3F9F0070CE93 /* KeioApp */ = {
+			isa = PBXGroup;
+			children = (
+				C7985F2920CEB16100030A2C /* Model */,
+				C7985F2820CEB15700030A2C /* View */,
+				C75441A220C7CD31001626E7 /* infrastructure */,
+				C71BAF3020C2C96D0084B808 /* presentation */,
+				C71BAF3520C2CA690084B808 /* domain */,
+				C7DAA22B20BC470A0070CE93 /* KeioApp-Bridging-Header.h */,
+				C7DAA20320BC3F9F0070CE93 /* AppDelegate.h */,
+				C7DAA20420BC3F9F0070CE93 /* AppDelegate.m */,
+				C7DAA20920BC3F9F0070CE93 /* Main.storyboard */,
+				C7DAA20F20BC3FA00070CE93 /* Assets.xcassets */,
+				C7DAA21120BC3FA00070CE93 /* LaunchScreen.storyboard */,
+				C7DAA21420BC3FA00070CE93 /* Info.plist */,
+				C7DAA21520BC3FA00070CE93 /* main.m */,
+				C7DAA20C20BC3F9F0070CE93 /* KeioApp.xcdatamodeld */,
+				C738985B20BEA9290044EF22 /* Constants.h */,
+				C738985C20BEA9AA0044EF22 /* Constants.m */,
+				C7797FF220C7EE3500D396D6 /* utils.h */,
+				C7E9BF0A20C7EEC2009E9885 /* utils.m */,
+			);
+			path = KeioApp;
+			sourceTree = "<group>";
+		};
+		C7DAA21E20BC3FA00070CE93 /* KeioAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7DAA21F20BC3FA00070CE93 /* KeioAppTests.m */,
+				C7DAA22120BC3FA00070CE93 /* Info.plist */,
+			);
+			path = KeioAppTests;
+			sourceTree = "<group>";
+		};
+		C7DAA22A20BC46F90070CE93 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C71D8EEB20C6CACD00642870 /* class */,
+				C71BAF3420C2CA180084B808 /* education */,
+				C71BAF3320C2CA110084B808 /* portal */,
+				C7DAA22E20BC48200070CE93 /* User.h */,
+				C7DAA22F20BC487E0070CE93 /* User.m */,
+				C794AA0920BFE9AC00F1742F /* Me.h */,
+				C794AA0A20BFEA0E00F1742F /* Me.m */,
+				C7B8960320CB749000F63E88 /* AccessKey.h */,
+				C7B8960420CB74C600F63E88 /* AccessKey.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C86C420B52938C30FBC169FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				709F7BEB91C79377A3198634 /* Pods-KeioApp.debug.xcconfig */,
+				D46495820D548AC98F1562C3 /* Pods-KeioApp.release.xcconfig */,
+				A7D90F531747BFD92A91DDB5 /* Pods-KeioAppTests.debug.xcconfig */,
+				7B6D13D80D4A211FD4E8CCFD /* Pods-KeioAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7DAA1FF20BC3F9F0070CE93 /* KeioApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DAA22420BC3FA00070CE93 /* Build configuration list for PBXNativeTarget "KeioApp" */;
+			buildPhases = (
+				405387E3DB79A74A62B1EE7C /* [CP] Check Pods Manifest.lock */,
+				C7DAA1FC20BC3F9F0070CE93 /* Sources */,
+				C7DAA1FD20BC3F9F0070CE93 /* Frameworks */,
+				C7DAA1FE20BC3F9F0070CE93 /* Resources */,
+				AE82EAB1D96EDC0F1BFF644D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeioApp;
+			productName = KeioApp;
+			productReference = C7DAA20020BC3F9F0070CE93 /* KeioApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7DAA21A20BC3FA00070CE93 /* KeioAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DAA22720BC3FA00070CE93 /* Build configuration list for PBXNativeTarget "KeioAppTests" */;
+			buildPhases = (
+				B9FA6B3516E35136EEB87B10 /* [CP] Check Pods Manifest.lock */,
+				C7DAA21720BC3FA00070CE93 /* Sources */,
+				C7DAA21820BC3FA00070CE93 /* Frameworks */,
+				C7DAA21920BC3FA00070CE93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7DAA21D20BC3FA00070CE93 /* PBXTargetDependency */,
+			);
+			name = KeioAppTests;
+			productName = KeioAppTests;
+			productReference = C7DAA21B20BC3FA00070CE93 /* KeioAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7DAA1F820BC3F9F0070CE93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = ogiwara;
+				TargetAttributes = {
+					C7DAA1FF20BC3F9F0070CE93 = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
+					};
+					C7DAA21A20BC3FA00070CE93 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = C7DAA1FF20BC3F9F0070CE93;
+					};
+				};
+			};
+			buildConfigurationList = C7DAA1FB20BC3F9F0070CE93 /* Build configuration list for PBXProject "KeioApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7DAA1F720BC3F9F0070CE93;
+			productRefGroup = C7DAA20120BC3F9F0070CE93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7DAA1FF20BC3F9F0070CE93 /* KeioApp */,
+				C7DAA21A20BC3FA00070CE93 /* KeioAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7DAA1FE20BC3F9F0070CE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DAA21320BC3FA00070CE93 /* LaunchScreen.storyboard in Resources */,
+				C7DAA21020BC3FA00070CE93 /* Assets.xcassets in Resources */,
+				C7DAA20B20BC3F9F0070CE93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DAA21920BC3FA00070CE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		405387E3DB79A74A62B1EE7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeioApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE82EAB1D96EDC0F1BFF644D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KeioApp/Pods-KeioApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Ono/Ono.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ono.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeioApp/Pods-KeioApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9FA6B3516E35136EEB87B10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeioAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7DAA1FC20BC3F9F0070CE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DAA23020BC487E0070CE93 /* User.m in Sources */,
+				C7D9ED1D20C581EF004F62F6 /* ClassViewController.m in Sources */,
+				C7B8960520CB74C600F63E88 /* AccessKey.m in Sources */,
+				C794AA1320C039BC00F1742F /* PortalMessageDetailViewController.m in Sources */,
+				C71BAF2320C2A0950084B808 /* Education.m in Sources */,
+				C71BAF2F20C2C95A0084B808 /* EducationMessageTableViewCell.m in Sources */,
+				C71D8EF120C6CF5D00642870 /* ClassRepository.m in Sources */,
+				C71BAF2720C2BB790084B808 /* PortalMessage.m in Sources */,
+				C7C642E520C9695400614DBA /* LoginDataRepository.m in Sources */,
+				C7DAA20E20BC3F9F0070CE93 /* KeioApp.xcdatamodeld in Sources */,
+				C794AA0720BFE89E00F1742F /* PortalRepository.m in Sources */,
+				C71BAF2A20C2BC020084B808 /* EducationMessage.m in Sources */,
+				C7E9BF0B20C7EEC2009E9885 /* utils.m in Sources */,
+				C738986020BEE3F70044EF22 /* PortalViewController.m in Sources */,
+				C71BAF2520C2A1000084B808 /* EducationRepository.m in Sources */,
+				C75441A520C7CE02001626E7 /* Scraping.m in Sources */,
+				C76B945520BD93B200DF42EF /* LoginViewController.m in Sources */,
+				C7DAA20820BC3F9F0070CE93 /* ViewController.m in Sources */,
+				C7DAA21620BC3FA00070CE93 /* main.m in Sources */,
+				C71D8EEE20C6CB8F00642870 /* Class.m in Sources */,
+				C794AA0B20BFEA0E00F1742F /* Me.m in Sources */,
+				C794AA1620C12D5900F1742F /* PortalMessageTableViewCell.m in Sources */,
+				C738985D20BEA9AA0044EF22 /* Constants.m in Sources */,
+				C7D9ED2020C58210004F62F6 /* ClassTableViewCell.m in Sources */,
+				C794AA1020BFECB500F1742F /* Portal.m in Sources */,
+				C7DAA20520BC3F9F0070CE93 /* AppDelegate.m in Sources */,
+				C71BAF1F20C29A6F0084B808 /* EducationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DAA21720BC3FA00070CE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DAA22020BC3FA00070CE93 /* KeioAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7DAA21D20BC3FA00070CE93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7DAA1FF20BC3F9F0070CE93 /* KeioApp */;
+			targetProxy = C7DAA21C20BC3FA00070CE93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7DAA20920BC3F9F0070CE93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7DAA20A20BC3F9F0070CE93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7DAA21120BC3FA00070CE93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7DAA21220BC3FA00070CE93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7DAA22220BC3FA00070CE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7DAA22320BC3FA00070CE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7DAA22520BC3FA00070CE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709F7BEB91C79377A3198634 /* Pods-KeioApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BV297YXBP;
+				INFOPLIST_FILE = KeioApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ogiwara.KeioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KeioApp/model/KeioApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7DAA22620BC3FA00070CE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46495820D548AC98F1562C3 /* Pods-KeioApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BV297YXBP;
+				INFOPLIST_FILE = KeioApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ogiwara.KeioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KeioApp/model/KeioApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C7DAA22820BC3FA00070CE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7D90F531747BFD92A91DDB5 /* Pods-KeioAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeioAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ogiwara.KeioAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeioApp.app/KeioApp";
+			};
+			name = Debug;
+		};
+		C7DAA22920BC3FA00070CE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6D13D80D4A211FD4E8CCFD /* Pods-KeioAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeioAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ogiwara.KeioAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeioApp.app/KeioApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7DAA1FB20BC3F9F0070CE93 /* Build configuration list for PBXProject "KeioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DAA22220BC3FA00070CE93 /* Debug */,
+				C7DAA22320BC3FA00070CE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DAA22420BC3FA00070CE93 /* Build configuration list for PBXNativeTarget "KeioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DAA22520BC3FA00070CE93 /* Debug */,
+				C7DAA22620BC3FA00070CE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DAA22720BC3FA00070CE93 /* Build configuration list for PBXNativeTarget "KeioAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DAA22820BC3FA00070CE93 /* Debug */,
+				C7DAA22920BC3FA00070CE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C7DAA20C20BC3F9F0070CE93 /* KeioApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C7DAA20D20BC3F9F0070CE93 /* KeioApp.xcdatamodel */,
+			);
+			currentVersion = C7DAA20D20BC3F9F0070CE93 /* KeioApp.xcdatamodel */;
+			path = KeioApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C7DAA1F820BC3F9F0070CE93 /* Project object */;
+}

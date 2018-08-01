@@ -7,30 +7,51 @@
 //
 
 import XCTest
+import WebKit
 @testable import KeioClient
 
-class KeioClientTests: XCTestCase {
+class KeioClientTests: XCTestCase, WKNavigationDelegate {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    //var repo: AuthReopsitory!
+    let web = WKWebView()
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testLogin(){
+        web.navigationDelegate = self
+        web.load(URLRequest(url: URL(string: Url.portal.rawValue)!))
+        
+        WKWebsiteDataStore.default().httpCookieStore.getAllCookies { cookies in
+            let mapedCookies = cookies.map { cookie in
+                return Cookie(name: cookie.name, value: cookie.value)
+            }
+            
+            let jsonString = String(data: try! JSONEncoder().encode(mapedCookies), encoding: .utf8)
+            
+            /*
+             Alamofire.request(Url.LocalWrapper.rawValue, method: .post, parameters: ["cookie": jsonString])
+             */
+            
+            print("Cookie: \(String(describing: jsonString))")
         }
+        
+        assert(true)
     }
+    
+    /*
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        print("Access to \(webView.url!.absoluteString)")
+        StateRepository.instance.state = .login
+    }*/
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        web.evaluateJavaScript("""
+form = document.forms.login;
+form.j_username.value = "";
+form.j_password.value = "";
+login = document.getElementsByName("_eventId_proceed")[0];
+login.click();
+""")
+    }
+    
+    
     
 }

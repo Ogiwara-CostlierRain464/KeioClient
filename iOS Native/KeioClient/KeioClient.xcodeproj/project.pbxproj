@@ -17,12 +17,48 @@
 		A59602C2A254864A5ADA9DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5960F48D9375CFEC51107CE /* Assets.xcassets */; };
 		A596047E4DB6B7DD51B4A98B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A596058E2F8C49D037DC900D /* LaunchScreen.storyboard */; };
 		A596066EE83B3306AE820DE3 /* KeioClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596040BCC721C4D402EF7DD /* KeioClientUITests.swift */; };
-		A5960C449740A946823643C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5960ACBDD544108821D6D15 /* ViewController.swift */; };
 		C716817C2099796A00FA5785 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716817B2099796900FA5785 /* HomeViewController.swift */; };
 		C716817F20997B7000FA5785 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C716818120997B7000FA5785 /* Localizable.strings */; };
 		C716818A20997EA700FA5785 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716818920997EA700FA5785 /* Cookie.swift */; };
 		C716818C20997FFC00FA5785 /* consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716818B20997FFC00FA5785 /* consts.swift */; };
+		C725E05420A08A2E00017E9D /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725E05320A08A2E00017E9D /* LaunchScreenViewController.swift */; };
+		C734E02E209B088D00C37D1F /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734E02D209B088D00C37D1F /* ApplicationError.swift */; };
+		C734E02F209B088D00C37D1F /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734E02D209B088D00C37D1F /* ApplicationError.swift */; };
+		C73A83B420A1DE0B0021BE29 /* scraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A83B320A1DE0B0021BE29 /* scraping.swift */; };
+		C73A83B620A1E0A00021BE29 /* portal.html in Resources */ = {isa = PBXBuildFile; fileRef = C73A83B520A1E0A00021BE29 /* portal.html */; };
+		C73A83B820A1E0D50021BE29 /* ScrapingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A83B720A1E0D50021BE29 /* ScrapingTest.swift */; };
+		C73A83B920A1E19D0021BE29 /* scraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A83B320A1DE0B0021BE29 /* scraping.swift */; };
+		C73A83BC20A1E71A0021BE29 /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A83BA20A1E7190021BE29 /* UserData+CoreDataClass.swift */; };
+		C73A83BD20A1E71A0021BE29 /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A83BB20A1E71A0021BE29 /* UserData+CoreDataProperties.swift */; };
+		C7534916209EB04900B20000 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7534915209EB04900B20000 /* RoundedButton.swift */; };
+		C7534918209EF6A200B20000 /* TestNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7534917209EF6A200B20000 /* TestNavigationViewController.swift */; };
 		C75B76172096E851003903B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B76162096E851003903B3 /* LoginViewController.swift */; };
+		C76803FA209D702D0084BFA6 /* Infratest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76803F9209D702D0084BFA6 /* Infratest.swift */; };
+		C76803FB209D70830084BFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59601663D33E6267143E1B9 /* AppDelegate.swift */; };
+		C7680419209DE8760084BFA6 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7680418209DE8760084BFA6 /* PortalViewController.swift */; };
+		C768041A209DE8760084BFA6 /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7680418209DE8760084BFA6 /* PortalViewController.swift */; };
+		C768041C209DE88B0084BFA6 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768041B209DE88B0084BFA6 /* EducationViewController.swift */; };
+		C768041D209DE88B0084BFA6 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768041B209DE88B0084BFA6 /* EducationViewController.swift */; };
+		C768041F209DE8D80084BFA6 /* NoClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768041E209DE8D80084BFA6 /* NoClassViewController.swift */; };
+		C7680420209DE8D80084BFA6 /* NoClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768041E209DE8D80084BFA6 /* NoClassViewController.swift */; };
+		C7680422209DE8E50084BFA6 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7680421209DE8E50084BFA6 /* MoreViewController.swift */; };
+		C7680423209DE8E50084BFA6 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7680421209DE8E50084BFA6 /* MoreViewController.swift */; };
+		C7680425209DEC890084BFA6 /* CookieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7680424209DEC890084BFA6 /* CookieRepository.swift */; };
+		C7680426209DEC890084BFA6 /* CookieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7680424209DEC890084BFA6 /* CookieRepository.swift */; };
+		C7680428209DEDF90084BFA6 /* UserDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7680427209DEDF90084BFA6 /* UserDataRepository.swift */; };
+		C7680429209DEDF90084BFA6 /* UserDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7680427209DEDF90084BFA6 /* UserDataRepository.swift */; };
+		C77F95AC209ABD6D002F5D2D /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716818920997EA700FA5785 /* Cookie.swift */; };
+		C77F95AE209ABE58002F5D2D /* PortalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F95AD209ABE58002F5D2D /* PortalRepository.swift */; };
+		C77F95AF209ABE58002F5D2D /* PortalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F95AD209ABE58002F5D2D /* PortalRepository.swift */; };
+		C77F95B1209ABEBB002F5D2D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F95B0209ABEBB002F5D2D /* Message.swift */; };
+		C77F95B2209ABEBB002F5D2D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F95B0209ABEBB002F5D2D /* Message.swift */; };
+		C77F95B4209ABEF4002F5D2D /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F95B3209ABEF4002F5D2D /* Me.swift */; };
+		C77F95B5209ABEF4002F5D2D /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F95B3209ABEF4002F5D2D /* Me.swift */; };
+		C77F95B8209ABF1C002F5D2D /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F95B7209ABF1C002F5D2D /* Index.swift */; };
+		C77F95B9209ABF1C002F5D2D /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F95B7209ABF1C002F5D2D /* Index.swift */; };
+		C78BEF7C209C5F52008E6030 /* RxTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78BEF7B209C5F52008E6030 /* RxTest.swift */; };
+		C7923033209F3B0F00632644 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7923032209F3B0F00632644 /* MessageTableViewCell.swift */; };
+		C79C2F5E209B4C360046DB6B /* consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716818B20997FFC00FA5785 /* consts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +93,6 @@
 		A5960523B6C4C3E209ED894E /* KeioClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeioClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A596076E39D6F10285BA73B9 /* KeioClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeioClientTests.swift; sourceTree = "<group>"; };
 		A596078A7E171AE640988E76 /* KeioClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeioClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5960ACBDD544108821D6D15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5960B329C265CA8232DB248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		A5960BE9B2D385BE042EDA71 /* KeioClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeioClient.xcdatamodel; sourceTree = "<group>"; };
 		A5960DBEC4C89EB2C413E6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +107,30 @@
 		C716818620997D9100FA5785 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		C716818920997EA700FA5785 /* Cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 		C716818B20997FFC00FA5785 /* consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = consts.swift; sourceTree = "<group>"; };
+		C725E05320A08A2E00017E9D /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		C734E02D209B088D00C37D1F /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		C73A83B320A1DE0B0021BE29 /* scraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scraping.swift; sourceTree = "<group>"; };
+		C73A83B520A1E0A00021BE29 /* portal.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = portal.html; sourceTree = "<group>"; };
+		C73A83B720A1E0D50021BE29 /* ScrapingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapingTest.swift; sourceTree = "<group>"; };
+		C73A83BA20A1E7190021BE29 /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataClass.swift"; path = "KeioClient/infrastructure/UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C73A83BB20A1E71A0021BE29 /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataProperties.swift"; path = "KeioClient/infrastructure/UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C7534915209EB04900B20000 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		C7534917209EF6A200B20000 /* TestNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavigationViewController.swift; sourceTree = "<group>"; };
 		C75B76162096E851003903B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C75D1F8A209AB828004643D1 /* DomainRule.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DomainRule.md; sourceTree = "<group>"; };
+		C76803F9209D702D0084BFA6 /* Infratest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infratest.swift; sourceTree = "<group>"; };
+		C7680418209DE8760084BFA6 /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
+		C768041B209DE88B0084BFA6 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		C768041E209DE8D80084BFA6 /* NoClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoClassViewController.swift; sourceTree = "<group>"; };
+		C7680421209DE8E50084BFA6 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		C7680424209DEC890084BFA6 /* CookieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieRepository.swift; sourceTree = "<group>"; };
+		C7680427209DEDF90084BFA6 /* UserDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRepository.swift; sourceTree = "<group>"; };
+		C77F95AD209ABE58002F5D2D /* PortalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalRepository.swift; sourceTree = "<group>"; };
+		C77F95B0209ABEBB002F5D2D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C77F95B3209ABEF4002F5D2D /* Me.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Me.swift; sourceTree = "<group>"; };
+		C77F95B7209ABF1C002F5D2D /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		C78BEF7B209C5F52008E6030 /* RxTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTest.swift; sourceTree = "<group>"; };
+		C7923032209F3B0F00632644 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		D20535EF9C3B30223FF6F8C1 /* Pods_KeioClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeioClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +178,8 @@
 		A59604ECA6527D441A05DDAD = {
 			isa = PBXGroup;
 			children = (
+				C73A83BA20A1E7190021BE29 /* UserData+CoreDataClass.swift */,
+				C73A83BB20A1E71A0021BE29 /* UserData+CoreDataProperties.swift */,
 				A5960A93EB8B49F2D602A1E9 /* Products */,
 				A5960838352F93B15BBA79D7 /* KeioClient */,
 				A596058B022CCA1C9F5F4122 /* KeioClientTests */,
@@ -134,6 +194,10 @@
 			children = (
 				A5960B329C265CA8232DB248 /* Info.plist */,
 				A596076E39D6F10285BA73B9 /* KeioClientTests.swift */,
+				C78BEF7B209C5F52008E6030 /* RxTest.swift */,
+				C76803F9209D702D0084BFA6 /* Infratest.swift */,
+				C73A83B520A1E0A00021BE29 /* portal.html */,
+				C73A83B720A1E0D50021BE29 /* ScrapingTest.swift */,
 			);
 			path = KeioClientTests;
 			sourceTree = "<group>";
@@ -141,7 +205,9 @@
 		A5960838352F93B15BBA79D7 /* KeioClient */ = {
 			isa = PBXGroup;
 			children = (
-				C716818820997E8F00FA5785 /* model */,
+				C7534912209EAFFC00B20000 /* presentation */,
+				C7680408209D9FA10084BFA6 /* infrastructure */,
+				C75D1F89209AB7B2004643D1 /* domain */,
 				A5960DBEC4C89EB2C413E6F0 /* Info.plist */,
 				A5960F48D9375CFEC51107CE /* Assets.xcassets */,
 				A596058E2F8C49D037DC900D /* LaunchScreen.storyboard */,
@@ -149,10 +215,14 @@
 				A596058F2BD773A627A49C8D /* KeioClient.xcdatamodeld */,
 				A5960FFB0DC654DBA522DB90 /* Main.storyboard */,
 				C716818120997B7000FA5785 /* Localizable.strings */,
-				A5960ACBDD544108821D6D15 /* ViewController.swift */,
 				C75B76162096E851003903B3 /* LoginViewController.swift */,
 				C716817B2099796900FA5785 /* HomeViewController.swift */,
-				C716818B20997FFC00FA5785 /* consts.swift */,
+				C7680418209DE8760084BFA6 /* PortalViewController.swift */,
+				C768041B209DE88B0084BFA6 /* EducationViewController.swift */,
+				C768041E209DE8D80084BFA6 /* NoClassViewController.swift */,
+				C7680421209DE8E50084BFA6 /* MoreViewController.swift */,
+				C7534917209EF6A200B20000 /* TestNavigationViewController.swift */,
+				C725E05320A08A2E00017E9D /* LaunchScreenViewController.swift */,
 			);
 			path = KeioClient;
 			sourceTree = "<group>";
@@ -179,9 +249,67 @@
 		C716818820997E8F00FA5785 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				C77F95B6209ABF0F002F5D2D /* portal */,
 				C716818920997EA700FA5785 /* Cookie.swift */,
+				C77F95B0209ABEBB002F5D2D /* Message.swift */,
+				C77F95B3209ABEF4002F5D2D /* Me.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		C7534912209EAFFC00B20000 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C7534914209EB02F00B20000 /* custom view */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		C7534914209EB02F00B20000 /* custom view */ = {
+			isa = PBXGroup;
+			children = (
+				C7534915209EB04900B20000 /* RoundedButton.swift */,
+				C7923032209F3B0F00632644 /* MessageTableViewCell.swift */,
+			);
+			path = "custom view";
+			sourceTree = "<group>";
+		};
+		C75D1F89209AB7B2004643D1 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				C716818B20997FFC00FA5785 /* consts.swift */,
+				C75D1F8B209ABAE3004643D1 /* repository */,
+				C716818820997E8F00FA5785 /* model */,
+				C75D1F8A209AB828004643D1 /* DomainRule.md */,
+				C734E02D209B088D00C37D1F /* ApplicationError.swift */,
+				C73A83B320A1DE0B0021BE29 /* scraping.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		C75D1F8B209ABAE3004643D1 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				C7680424209DEC890084BFA6 /* CookieRepository.swift */,
+				C77F95AD209ABE58002F5D2D /* PortalRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		C7680408209D9FA10084BFA6 /* infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C7680427209DEDF90084BFA6 /* UserDataRepository.swift */,
+			);
+			path = infrastructure;
+			sourceTree = "<group>";
+		};
+		C77F95B6209ABF0F002F5D2D /* portal */ = {
+			isa = PBXGroup;
+			children = (
+				C77F95B7209ABF1C002F5D2D /* Index.swift */,
+			);
+			path = portal;
 			sourceTree = "<group>";
 		};
 		D4B459435B60E2AB4724A641 /* Frameworks */ = {
@@ -224,6 +352,7 @@
 				A596035830F1C14CF6DD8504 /* Sources */,
 				A596001499BF02150AA4AB88 /* Frameworks */,
 				A5960BA9518CA1BADF7866E1 /* Resources */,
+				4FA1C9CC184750C0AC0E3368 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73A83B620A1E0A00021BE29 /* portal.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,13 +450,19 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-KeioClient/Pods-KeioClient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Curry/Curry.framework",
+				"${BUILT_PRODUCTS_DIR}/Fuzi/Fuzi.framework",
 				"${BUILT_PRODUCTS_DIR}/Runes/Runes.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Curry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fuzi.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Runes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,6 +485,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA1C9CC184750C0AC0E3368 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KeioClientTests/Pods-KeioClientTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeioClientTests/Pods-KeioClientTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5D2C2BE2E494BEF92AB1DE69 /* [CP] Check Pods Manifest.lock */ = {
@@ -394,7 +552,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73A83BC20A1E71A0021BE29 /* UserData+CoreDataClass.swift in Sources */,
+				C73A83BD20A1E71A0021BE29 /* UserData+CoreDataProperties.swift in Sources */,
+				C76803FB209D70830084BFA6 /* AppDelegate.swift in Sources */,
 				A5960052E29C01902ADC110E /* KeioClientTests.swift in Sources */,
+				C77F95B9209ABF1C002F5D2D /* Index.swift in Sources */,
+				C768041A209DE8760084BFA6 /* PortalViewController.swift in Sources */,
+				C7680423209DE8E50084BFA6 /* MoreViewController.swift in Sources */,
+				C78BEF7C209C5F52008E6030 /* RxTest.swift in Sources */,
+				C77F95AC209ABD6D002F5D2D /* Cookie.swift in Sources */,
+				C76803FA209D702D0084BFA6 /* Infratest.swift in Sources */,
+				C77F95B2209ABEBB002F5D2D /* Message.swift in Sources */,
+				C768041D209DE88B0084BFA6 /* EducationViewController.swift in Sources */,
+				C79C2F5E209B4C360046DB6B /* consts.swift in Sources */,
+				C7680420209DE8D80084BFA6 /* NoClassViewController.swift in Sources */,
+				C73A83B920A1E19D0021BE29 /* scraping.swift in Sources */,
+				C77F95AF209ABE58002F5D2D /* PortalRepository.swift in Sources */,
+				C7680429209DEDF90084BFA6 /* UserDataRepository.swift in Sources */,
+				C73A83B820A1E0D50021BE29 /* ScrapingTest.swift in Sources */,
+				C77F95B5209ABEF4002F5D2D /* Me.swift in Sources */,
+				C7680426209DEC890084BFA6 /* CookieRepository.swift in Sources */,
+				C734E02F209B088D00C37D1F /* ApplicationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,13 +580,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77F95B4209ABEF4002F5D2D /* Me.swift in Sources */,
 				C716817C2099796A00FA5785 /* HomeViewController.swift in Sources */,
+				C77F95B8209ABF1C002F5D2D /* Index.swift in Sources */,
 				C716818A20997EA700FA5785 /* Cookie.swift in Sources */,
+				C7680419209DE8760084BFA6 /* PortalViewController.swift in Sources */,
+				C7680422209DE8E50084BFA6 /* MoreViewController.swift in Sources */,
+				C7534918209EF6A200B20000 /* TestNavigationViewController.swift in Sources */,
 				C75B76172096E851003903B3 /* LoginViewController.swift in Sources */,
 				A5960240A0F274F491F21252 /* AppDelegate.swift in Sources */,
+				C77F95AE209ABE58002F5D2D /* PortalRepository.swift in Sources */,
+				C768041C209DE88B0084BFA6 /* EducationViewController.swift in Sources */,
 				A596008377AAFC4CAEFED242 /* KeioClient.xcdatamodeld in Sources */,
+				C768041F209DE8D80084BFA6 /* NoClassViewController.swift in Sources */,
+				C725E05420A08A2E00017E9D /* LaunchScreenViewController.swift in Sources */,
+				C77F95B1209ABEBB002F5D2D /* Message.swift in Sources */,
+				C7534916209EB04900B20000 /* RoundedButton.swift in Sources */,
+				C7680428209DEDF90084BFA6 /* UserDataRepository.swift in Sources */,
 				C716818C20997FFC00FA5785 /* consts.swift in Sources */,
-				A5960C449740A946823643C2 /* ViewController.swift in Sources */,
+				C7680425209DEC890084BFA6 /* CookieRepository.swift in Sources */,
+				C734E02E209B088D00C37D1F /* ApplicationError.swift in Sources */,
+				C73A83B420A1DE0B0021BE29 /* scraping.swift in Sources */,
+				C7923033209F3B0F00632644 /* MessageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

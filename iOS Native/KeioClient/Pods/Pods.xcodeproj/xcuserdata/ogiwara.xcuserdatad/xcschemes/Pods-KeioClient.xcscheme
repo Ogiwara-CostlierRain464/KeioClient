@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9ED81D96CFAB7324F9972C8E42E87306"
+               BlueprintIdentifier = "2EEC92C2BDD5F5D01CCE056B52E3F5DE"
                BuildableName = "Pods_KeioClient.framework"
                BlueprintName = "Pods-KeioClient"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9ED81D96CFAB7324F9972C8E42E87306"
+            BlueprintIdentifier = "2EEC92C2BDD5F5D01CCE056B52E3F5DE"
             BuildableName = "Pods_KeioClient.framework"
             BlueprintName = "Pods-KeioClient"
             ReferencedContainer = "container:Pods.xcodeproj">

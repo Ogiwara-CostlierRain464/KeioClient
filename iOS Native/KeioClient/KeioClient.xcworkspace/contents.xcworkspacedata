@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KeioClient/infrastructure/UserData+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:KeioClient/infrastructure/UserData+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:KeioClient.xcodeproj">
    </FileRef>
    <FileRef

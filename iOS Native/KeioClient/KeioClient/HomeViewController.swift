@@ -7,20 +7,57 @@
 //
 
 import UIKit
+import WebKit
 
-class HomeViewController: UITabBarController {
-
-    var cookie: [Cookie]?
+class HomeViewController: UITabBarController, WKNavigationDelegate{
+    let web = WKWebView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if isNotCookieValid() {
-            performSegue(withIdentifier: "segueLogin", sender: nil)
+        
+        web.load(URLRequest(url: URL(string: Url.realPortal.rawValue)!))
+        web.navigationDelegate = self
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        guard let url = webView.url else { return }
+        
+        if url.absoluteString.contains(Url.realOAuth.rawValue){
+            tryToLogin()
+        }
+        
+        if url.absoluteString.contains(Url.realPortal.rawValue){
+            //ログイン成功!
+            storeCookieAndBackToHame()
         }
     }
     
-    private func isNotCookieValid() -> Bool{
-        return cookie == nil
+    private func tryToLogin(){
+        web.evaluateJavaScript(
+            """
+form = document.forms.login;
+form.j_username.value = "yushiogiwara@keio.jp";
+form.j_password.value = "Maiko7039";
+login = document.getElementsByName("_eventId_proceed")[0];
+login.click();
+""")
+    }
+    
+    private func storeCookieAndBackToHame(){
+        WKWebsiteDataStore.default().httpCookieStore.getAllCookies { cookies in
+            let mapedCookies = cookies.map { cookie in
+                return Cookie(name: cookie.name, value: cookie.value)
+            }
+            
+            let jsonString = String(data: try! JSONEncoder().encode(mapedCookies), encoding: .utf8)
+            
+            //print("Cookie: \(String(describing: jsonString))")
+            
+            self.pushCookies(mapedCookies)
+        }
+    }
+    
+    func pushCookies(_ cookies: [Cookie]){
+        CookieRepository.shared.subject.onNext(cookies)
     }
 }
