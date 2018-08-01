@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.4'
+
+target 'KeioApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for KeioApp
+  #pod 'RxObjC', '~> 1.0'
+  pod 'Ono'
+  pod 'AFNetworking', '~> 3.0'
+
+  target 'KeioAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
